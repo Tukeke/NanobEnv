@@ -1,0 +1,3 @@
+omniperl.vba: call delete('/home/xayon/.vim/ftplugin/perl/omniperl.pl')|call delete('/home/xayon/.vim/ftplugin/perl/omniperl.vim')|call delete('/home/xayon/.vim/doc/omniperl.txt')
+tComment.vba: call delete('/root/.vim/doc/tComment.txt')|call delete('/root/.vim/plugin/tComment.vim')|call delete('/root/.vim/autoload/tcomment.vim')
+foo.vba: call delete('/home/xayon/.vim/autoload/conque_term.vim')|call delete('/home/xayon/.vim/doc/conque_term.txt')|call delete('/home/xayon/.vim/plugin/conque_term.vim')|call delete('/home/xayon/.vim/syntax/conque_term.vim')

@@ -1,0 +1,21 @@
+extra:	Reading recipe "main.aap"
+info:	Updating recipe "main.aap"
+info:	Attempting download of "ftp://ftp.vim.org/pub/vim/runtime/main.aap"
+info:	Downloaded "ftp://ftp.vim.org/pub/vim/runtime/main.aap" to "/home/xayon/.vim/main.aap"
+extra:	Restart reading recipe "/home/xayon/.vim/main.aap"
+print:	Cannot read "filetype.vim", guessing fileformat is "unix".
+info:	Attempting download of "ftp://ftp.vim.org/pub/vim/runtime/getunix.aap"
+info:	Downloaded "ftp://ftp.vim.org/pub/vim/runtime/getunix.aap" to "/home/xayon/.vim/getunix.aap"
+extra:	Reading recipe "getunix.aap"
+extra:	Finished reading recipe "getunix.aap"
+extra:	Finished reading recipe "/home/xayon/.vim/main.aap"
+error:	Internal Error
+error:	Traceback (most recent call last):
+   File "/usr/lib/aap/Process.py", line 1163, in Process
+    exec script_string in recdict, recdict
+   File "<string>", line 7, in <module>
+   File "/usr/lib/aap/Error.py", line 49, in __init__
+    self.args = args
+ TypeError: 'NoneType' object is not iterable
+
+error:	Aborted

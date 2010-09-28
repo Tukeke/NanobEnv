@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/xayon/devel/ftp/Heraldo/www/concursos/sites/all/modules/_subdomain'
+let g:netrw_dirhist_2='/home/xayon/devel/svn/svn-vertical-look/trunk/mod/search/views/default/page_elements'
+let g:netrw_dirhist_3='/home/xayon/devel/svn/svn-vertical-look/trunk/mod/iri_routes/languages'

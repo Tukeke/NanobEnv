@@ -1,0 +1,377 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+<Leader>cD	vcscommand.vim	/^		nmap <unique> <Leader>cD <Plug>VCSDelete$/;"	m
+<Leader>cG	vcscommand.vim	/^		nmap <unique> <Leader>cG <Plug>VCSClearAndGotoOriginal$/;"	m
+<Leader>cL	vcscommand.vim	/^		nmap <unique> <Leader>cL <Plug>VCSLock$/;"	m
+<Leader>cU	vcscommand.vim	/^		nmap <unique> <Leader>cU <Plug>VCSUnlock$/;"	m
+<Leader>ca	vcscommand.vim	/^		nmap <unique> <Leader>ca <Plug>VCSAdd$/;"	m
+<Leader>cc	vcscommand.vim	/^		nmap <unique> <Leader>cc <Plug>VCSCommit$/;"	m
+<Leader>cd	vcscommand.vim	/^		nmap <unique> <Leader>cd <Plug>VCSDiff$/;"	m
+<Leader>cg	vcscommand.vim	/^		nmap <unique> <Leader>cg <Plug>VCSGotoOriginal$/;"	m
+<Leader>ci	vcscommand.vim	/^		nmap <unique> <Leader>ci <Plug>VCSInfo$/;"	m
+<Leader>cl	vcscommand.vim	/^		nmap <unique> <Leader>cl <Plug>VCSLog$/;"	m
+<Leader>cn	vcscommand.vim	/^		nmap <unique> <Leader>cn <Plug>VCSAnnotate$/;"	m
+<Leader>cq	vcscommand.vim	/^		nmap <unique> <Leader>cq <Plug>VCSRevert$/;"	m
+<Leader>cr	vcscommand.vim	/^		nmap <unique> <Leader>cr <Plug>VCSReview$/;"	m
+<Leader>cs	vcscommand.vim	/^		nmap <unique> <Leader>cs <Plug>VCSStatus$/;"	m
+<Leader>cu	vcscommand.vim	/^		nmap <unique> <Leader>cu <Plug>VCSUpdate$/;"	m
+<Leader>cv	vcscommand.vim	/^		nmap <unique> <Leader>cv <Plug>VCSVimDiff$/;"	m
+<Leader>lps		:call	perl-support.vim	/^  nmap	<silent>  <Leader>lps		:call Perl_CreateGuiMenus()<CR>$/;"	m
+<Leader>ups		:call	perl-support.vim	/^  nmap	<silent>  <Leader>ups		:call Perl_RemoveGuiMenus()<CR>$/;"	m
+<Plug>VCSAdd	vcscommand.vim	/^nnoremap <silent> <Plug>VCSAdd :VCSAdd<CR>$/;"	m
+<Plug>VCSAnnotate	vcscommand.vim	/^nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate<CR>$/;"	m
+<Plug>VCSClearAndGotoOriginal	vcscommand.vim	/^nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!<CR>$/;"	m
+<Plug>VCSCommit	vcscommand.vim	/^nnoremap <silent> <Plug>VCSCommit :VCSCommit<CR>$/;"	m
+<Plug>VCSDelete	vcscommand.vim	/^nnoremap <silent> <Plug>VCSDelete :VCSDelete<CR>$/;"	m
+<Plug>VCSDiff	vcscommand.vim	/^nnoremap <silent> <Plug>VCSDiff :VCSDiff<CR>$/;"	m
+<Plug>VCSGotoOriginal	vcscommand.vim	/^nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal<CR>$/;"	m
+<Plug>VCSInfo	vcscommand.vim	/^nnoremap <silent> <Plug>VCSInfo :VCSInfo<CR>$/;"	m
+<Plug>VCSLock	vcscommand.vim	/^nnoremap <silent> <Plug>VCSLock :VCSLock<CR>$/;"	m
+<Plug>VCSLog	vcscommand.vim	/^nnoremap <silent> <Plug>VCSLog :VCSLog<CR>$/;"	m
+<Plug>VCSRevert	vcscommand.vim	/^nnoremap <silent> <Plug>VCSRevert :VCSRevert<CR>$/;"	m
+<Plug>VCSReview	vcscommand.vim	/^nnoremap <silent> <Plug>VCSReview :VCSReview<CR>$/;"	m
+<Plug>VCSStatus	vcscommand.vim	/^nnoremap <silent> <Plug>VCSStatus :VCSStatus<CR>$/;"	m
+<Plug>VCSUnlock	vcscommand.vim	/^nnoremap <silent> <Plug>VCSUnlock :VCSUnlock<CR>$/;"	m
+<Plug>VCSUpdate	vcscommand.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate<CR>$/;"	m
+<Plug>VCSVimDiff	vcscommand.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff<CR>$/;"	m
+CVSEdit	vcscvs.vim	/^com! CVSEdit call s:CVSEdit()$/;"	c
+CVSEdit	vcscvs.vim	/^function! s:CVSEdit()$/;"	f
+CVSEditors	vcscvs.vim	/^com! CVSEditors call s:CVSEditors()$/;"	c
+CVSEditors	vcscvs.vim	/^function! s:CVSEditors()$/;"	f
+CVSUnedit	vcscvs.vim	/^com! CVSUnedit call s:CVSUnedit()$/;"	c
+CVSUnedit	vcscvs.vim	/^function! s:CVSUnedit()$/;"	f
+CVSWatch	vcscvs.vim	/^com! -nargs=1 CVSWatch call s:CVSWatch(<f-args>)$/;"	c
+CVSWatch	vcscvs.vim	/^function! s:CVSWatch(onoff)$/;"	f
+CVSWatchAdd	vcscvs.vim	/^com! CVSWatchAdd call s:CVSWatch('add')$/;"	c
+CVSWatchOff	vcscvs.vim	/^com! CVSWatchOff call s:CVSWatch('off')$/;"	c
+CVSWatchOn	vcscvs.vim	/^com! CVSWatchOn call s:CVSWatch('on')$/;"	c
+CVSWatchRemove	vcscvs.vim	/^com! CVSWatchRemove call s:CVSWatch('remove')$/;"	c
+CVSWatchers	vcscvs.vim	/^com! CVSWatchers call s:CVSWatchers()$/;"	c
+CVSWatchers	vcscvs.vim	/^function! s:CVSWatchers()$/;"	f
+CloseAllResultBuffers	vcscommand.vim	/^function! s:CloseAllResultBuffers()$/;"	f
+DoCommand	vcscvs.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcsgit.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcssvk.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+DoCommand	vcssvn.vim	/^function! s:DoCommand(cmd, cmdName, statusText, options)$/;"	f
+EditFile	vcscommand.vim	/^function! s:EditFile(command, originalBuffer, statusText)$/;"	f
+ExecuteExtensionMapping	vcscommand.vim	/^function! s:ExecuteExtensionMapping(mapping)$/;"	f
+ExecuteVCSCommand	vcscommand.vim	/^function! s:ExecuteVCSCommand(command, argList)$/;"	f
+GenerateResultBufferName	vcscommand.vim	/^function! s:GenerateResultBufferName(command, originalBuffer, vcsType, statusText)$/;"	f
+GenerateResultBufferNameWithExtension	vcscommand.vim	/^function! s:GenerateResultBufferNameWithExtension(command, originalBuffer, vcsType, statusText)$/;"	f
+GetRevision	vcscvs.vim	/^function! GetRevision()$/;"	f
+MarkOrigBufferForSetup	vcscommand.vim	/^function! s:MarkOrigBufferForSetup(buffer)$/;"	f
+OverrideOption	vcscommand.vim	/^function! s:OverrideOption(option, ...)$/;"	f
+PerlSetGlobalVariable	perl-support.vim	/^function! PerlSetGlobalVariable ( name, default )$/;"	f
+PerlSetLocalVariable	perl-support.vim	/^function! PerlSetLocalVariable ( name )$/;"	f
+Perl_AlignLineEndComm	perl-support.vim	/^function! Perl_AlignLineEndComm ( mode ) range$/;"	f
+Perl_ApplyFlag	perl-support.vim	/^function! Perl_ApplyFlag ( val, flag )$/;"	f
+Perl_Arguments	perl-support.vim	/^function! Perl_Arguments ()$/;"	f
+Perl_CodeSnippet	perl-support.vim	/^function! Perl_CodeSnippet(mode)$/;"	f
+Perl_CommentBlock	perl-support.vim	/^function! Perl_CommentBlock (mode)$/;"	f
+Perl_CommentToggle	perl-support.vim	/^function! Perl_CommentToggle ()$/;"	f
+Perl_CommentVimModeline	perl-support.vim	/^function! Perl_CommentVimModeline ()$/;"	f
+Perl_CreateGuiMenus	perl-support.vim	/^function! Perl_CreateGuiMenus ()$/;"	f
+Perl_DateAndTime	perl-support.vim	/^function! Perl_DateAndTime ( format )$/;"	f
+Perl_Debugger	perl-support.vim	/^function! Perl_Debugger ()$/;"	f
+Perl_EditTemplates	perl-support.vim	/^function! Perl_EditTemplates ( type )$/;"	f
+Perl_ExpandSingleMacro	perl-support.vim	/^function! Perl_ExpandSingleMacro ( val, macroname, replacement )$/;"	f
+Perl_ExpandUserMacros	perl-support.vim	/^function! Perl_ExpandUserMacros ( key )$/;"	f
+Perl_GetLineEndCommCol	perl-support.vim	/^function! Perl_GetLineEndCommCol ()$/;"	f
+Perl_Hardcopy	perl-support.vim	/^function! Perl_Hardcopy (mode)$/;"	f
+Perl_HelpPerlsupport	perl-support.vim	/^function! Perl_HelpPerlsupport ()$/;"	f
+Perl_InitializePerlInterface	perl-support.vim	/^function! Perl_InitializePerlInterface( )$/;"	f
+Perl_Input	perl-support.vim	/^function! Perl_Input ( promp, text, ... )$/;"	f
+Perl_InsertDateAndTime	perl-support.vim	/^function! Perl_InsertDateAndTime ( format )$/;"	f
+Perl_InsertMacroValue	perl-support.vim	/^function! Perl_InsertMacroValue ( key )$/;"	f
+Perl_InsertTemplate	perl-support.vim	/^function! Perl_InsertTemplate ( key, ... )$/;"	f
+Perl_LineEndComment	perl-support.vim	/^function! Perl_LineEndComment ( comment )$/;"	f
+Perl_MakeScriptExecutable	perl-support.vim	/^function! Perl_MakeScriptExecutable ()$/;"	f
+Perl_MultiLineEndComments	perl-support.vim	/^function! Perl_MultiLineEndComments ()$/;"	f
+Perl_OpenFold	perl-support.vim	/^function! Perl_OpenFold ( mode )$/;"	f
+Perl_POD	perl-support.vim	/^function! Perl_POD ( format )$/;"	f
+Perl_PerlCriticOptions	perl-support.vim	/^function! Perl_PerlCriticOptions ( ... )$/;"	f
+Perl_PerlCriticSeverity	perl-support.vim	/^function! Perl_PerlCriticSeverity ( severity )$/;"	f
+Perl_PerlCriticVerbosity	perl-support.vim	/^function! Perl_PerlCriticVerbosity ( verbosity )$/;"	f
+Perl_PerlSwitches	perl-support.vim	/^function! Perl_PerlSwitches ()$/;"	f
+Perl_Perlcritic	perl-support.vim	/^function! Perl_Perlcritic ()$/;"	f
+Perl_PerlcriticMsg	perl-support.vim	/^function! Perl_PerlcriticMsg ()$/;"	f
+Perl_Perltidy	perl-support.vim	/^function! Perl_Perltidy (mode)$/;"	f
+Perl_PodCheck	perl-support.vim	/^function! Perl_PodCheck ()$/;"	f
+Perl_PodCheckMsg	perl-support.vim	/^function! Perl_PodCheckMsg ()$/;"	f
+Perl_ReadTemplates	perl-support.vim	/^function! Perl_ReadTemplates ( templatefile )$/;"	f
+Perl_RemoveGuiMenus	perl-support.vim	/^function! Perl_RemoveGuiMenus ()$/;"	f
+Perl_RereadTemplates	perl-support.vim	/^function! Perl_RereadTemplates ()$/;"	f
+Perl_Run	perl-support.vim	/^function! Perl_Run ()$/;"	f
+Perl_SaveWithTimestamp	perl-support.vim	/^function! Perl_SaveWithTimestamp ()$/;"	f
+Perl_SetSmallCommentStyle	perl-support.vim	/^function! Perl_SetSmallCommentStyle ()$/;"	f
+Perl_Settings	perl-support.vim	/^function! Perl_Settings ()$/;"	f
+Perl_Smallprof	perl-support.vim	/^function! Perl_Smallprof ()$/;"	f
+Perl_SyntaxCheck	perl-support.vim	/^function! Perl_SyntaxCheck ()$/;"	f
+Perl_SyntaxCheckMsg	perl-support.vim	/^function! Perl_SyntaxCheckMsg ()$/;"	f
+Perl_Toggle_Gvim_Xterm	perl-support.vim	/^function! Perl_Toggle_Gvim_Xterm ()$/;"	f
+Perl_ToolMenu	perl-support.vim	/^function! Perl_ToolMenu ()$/;"	f
+Perl_UncommentBlock	perl-support.vim	/^function! Perl_UncommentBlock ()$/;"	f
+Perl_XtermSize	perl-support.vim	/^function! Perl_XtermSize ()$/;"	f
+Perl_perldoc	perl-support.vim	/^function! Perl_perldoc()$/;"	f
+Perl_perldoc_generate_module_list	perl-support.vim	/^function! Perl_perldoc_generate_module_list()$/;"	f
+Perl_perldoc_show_module_list	perl-support.vim	/^function! Perl_perldoc_show_module_list()$/;"	f
+ReportError	vcscommand.vim	/^function! s:ReportError(error)$/;"	f
+SetupBuffer	vcscommand.vim	/^function! s:SetupBuffer()$/;"	f
+TE_Adjust_Winwidth	tagexplorer.vim	/^        let TE_Adjust_Winwidth = 0$/;"	v
+TE_Adjust_Winwidth	tagexplorer.vim	/^        let TE_Adjust_Winwidth = 1$/;"	v
+TE_ChangeDir	tagexplorer.vim	/^function! s:TE_ChangeDir()$/;"	f
+TE_CloseWindow	tagexplorer.vim	/^function! s:TE_CloseWindow()$/;"	f
+TE_Ctags_Path	tagexplorer.vim	/^    let TE_Ctags_Path = 'ctags'$/;"	v
+TE_DeleteStateInfo	tagexplorer.vim	/^function! s:TE_DeleteStateInfo()$/;"	f
+TE_EditFile	tagexplorer.vim	/^function! s:TE_EditFile(new_window, filename, pat)$/;"	f
+TE_Exclude_Dir_Pattern	tagexplorer.vim	/^    let TE_Exclude_Dir_Pattern = ''$/;"	v
+TE_Exclude_File_Pattern	tagexplorer.vim	/^    let TE_Exclude_File_Pattern = '.*\\.o$\\|.*\\.obj$\\|.*\\.bak$\\|.*\\.swp$' .$/;"	v
+TE_FoldText	tagexplorer.vim	/^function! TE_FoldText()$/;"	f
+TE_GetFileIndex	tagexplorer.vim	/^function! s:TE_GetFileIndex(linenr)$/;"	f
+TE_GetTtypeIndex	tagexplorer.vim	/^function! s:TE_GetTtypeIndex(idx, linenr)$/;"	f
+TE_Include_Dir_Pattern	tagexplorer.vim	/^    let TE_Include_Dir_Pattern = ''$/;"	v
+TE_Include_File_Pattern	tagexplorer.vim	/^    let TE_Include_File_Pattern = ''$/;"	v
+TE_InitWindow	tagexplorer.vim	/^function! s:TE_InitWindow()$/;"	f
+TE_JumpToTag	tagexplorer.vim	/^function! s:TE_JumpToTag(new_window, fidx)$/;"	f
+TE_ListDir	tagexplorer.vim	/^function! s:TE_ListDir(dirname)$/;"	f
+TE_ListTags	tagexplorer.vim	/^function! s:TE_ListTags()$/;"	f
+TE_OpenDir	tagexplorer.vim	/^function! s:TE_OpenDir(newdir)$/;"	f
+TE_OpenFile	tagexplorer.vim	/^function! s:TE_OpenFile(new_window, fidx)$/;"	f
+TE_OpenWindow	tagexplorer.vim	/^function! s:TE_OpenWindow()$/;"	f
+TE_ProcessSelection	tagexplorer.vim	/^function! s:TE_ProcessSelection(new_window)$/;"	f
+TE_RemoveTags	tagexplorer.vim	/^function! s:TE_RemoveTags(fidx)$/;"	f
+TE_ShowHelp	tagexplorer.vim	/^function! s:TE_ShowHelp()$/;"	f
+TE_ShowPrototype	tagexplorer.vim	/^function! s:TE_ShowPrototype()$/;"	f
+TE_SortTags	tagexplorer.vim	/^function! s:TE_SortTags()$/;"	f
+TE_Sort_Type	tagexplorer.vim	/^    let TE_Sort_Type = 'order'$/;"	v
+TE_ToggleWindow	tagexplorer.vim	/^function! s:TE_ToggleWindow()$/;"	f
+TE_UpdateTags	tagexplorer.vim	/^function! s:TE_UpdateTags()$/;"	f
+TE_Use_Horiz_Window	tagexplorer.vim	/^    let TE_Use_Horiz_Window = 0$/;"	v
+TE_Use_Right_Window	tagexplorer.vim	/^    let TE_Use_Right_Window = 0$/;"	v
+TE_WinWidth	tagexplorer.vim	/^    let TE_WinWidth = 30$/;"	v
+TagExplorer	tagexplorer.vim	/^command! -nargs=0 TagExplorer :call s:TE_ToggleWindow()$/;"	c
+VCSAdd	vcscommand.vim	/^com! -nargs=* VCSAdd call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Add', [<f-args>]))$/;"	c
+VCSAnnotate	vcscommand.vim	/^com! -nargs=* VCSAnnotate call s:ExecuteVCSCommand('Annotate', [<f-args>])$/;"	c
+VCSBlame	vcscommand.vim	/^com! -nargs=* VCSBlame call s:ExecuteVCSCommand('Annotate', [<f-args>])$/;"	c
+VCSCommand	vcscommand.vim	/^augroup VCSCommand$/;"	a
+VCSCommandChangeToCurrentFileDir	vcscommand.vim	/^function! VCSCommandChangeToCurrentFileDir(fileName)$/;"	f
+VCSCommandChdir	vcscommand.vim	/^function! VCSCommandChdir(directory)$/;"	f
+VCSCommandCommit	vcscommand.vim	/^augroup VCSCommandCommit$/;"	a
+VCSCommandDisableBufferSetup	vcscommand.vim	/^com! VCSCommandDisableBufferSetup call VCSCommandDisableBufferSetup()$/;"	c
+VCSCommandDisableBufferSetup	vcscommand.vim	/^function! VCSCommandDisableBufferSetup()$/;"	f
+VCSCommandDoCommand	vcscommand.vim	/^function! VCSCommandDoCommand(cmd, cmdName, statusText, options)$/;"	f
+VCSCommandEnableBufferSetup	vcscommand.vim	/^com! VCSCommandEnableBufferSetup call VCSCommandEnableBufferSetup()$/;"	c
+VCSCommandEnableBufferSetup	vcscommand.vim	/^function! VCSCommandEnableBufferSetup()$/;"	f
+VCSCommandGetOption	vcscommand.vim	/^function! VCSCommandGetOption(name, default)$/;"	f
+VCSCommandGetOriginalBuffer	vcscommand.vim	/^function! VCSCommandGetOriginalBuffer(vcsBuffer)$/;"	f
+VCSCommandGetStatusLine	vcscommand.vim	/^function! VCSCommandGetStatusLine()$/;"	f
+VCSCommandGetVCSType	vcscommand.vim	/^function! VCSCommandGetVCSType(buffer)$/;"	f
+VCSCommandRegisterModule	vcscommand.vim	/^function! VCSCommandRegisterModule(name, path, commandMap, mappingMap)$/;"	f
+VCSCommandVIMShutdown	vcscommand.vim	/^augroup VCSCommandVIMShutdown$/;"	a
+VCSCommit	vcscommand.vim	/^com! -nargs=? -bang VCSCommit call s:VCSCommit(<q-bang>, <q-args>)$/;"	c
+VCSCommit	vcscommand.vim	/^function! s:VCSCommit(bang, message)$/;"	f
+VCSDelete	vcscommand.vim	/^com! -nargs=* VCSDelete call s:ExecuteVCSCommand('Delete', [<f-args>])$/;"	c
+VCSDiff	vcscommand.vim	/^com! -nargs=* VCSDiff call s:ExecuteVCSCommand('Diff', [<f-args>])$/;"	c
+VCSFinishCommit	vcscommand.vim	/^function! s:VCSFinishCommit(logMessageList, originalBuffer)$/;"	f
+VCSFinishCommitWithBuffer	vcscommand.vim	/^function! s:VCSFinishCommitWithBuffer()$/;"	f
+VCSGotoOriginal	vcscommand.vim	/^com! -nargs=0 -bang VCSGotoOriginal call s:VCSGotoOriginal(<q-bang>)$/;"	c
+VCSGotoOriginal	vcscommand.vim	/^function! s:VCSGotoOriginal(bang)$/;"	f
+VCSInfo	vcscommand.vim	/^com! -nargs=* VCSInfo call s:ExecuteVCSCommand('Info', [<f-args>])$/;"	c
+VCSLock	vcscommand.vim	/^com! -nargs=* VCSLock call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Lock', [<f-args>]))$/;"	c
+VCSLog	vcscommand.vim	/^com! -nargs=* VCSLog call s:ExecuteVCSCommand('Log', [<f-args>])$/;"	c
+VCSReload	vcscommand.vim	/^com! VCSReload let savedPlugins = s:plugins|let s:plugins = {}|aunmenu Plugin.VCS|unlet! g:loaded_VCSCommand|runtime plugin\/vcscommand.vim|for plugin in values(savedPlugins)|execute 'source' plugin[0]|endfor|unlet savedPlugins$/;"	c
+VCSRemove	vcscommand.vim	/^com! -nargs=* VCSRemove call s:ExecuteVCSCommand('Delete', [<f-args>])$/;"	c
+VCSRevert	vcscommand.vim	/^com! -nargs=0 VCSRevert call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Revert', []))$/;"	c
+VCSReview	vcscommand.vim	/^com! -nargs=? VCSReview call s:ExecuteVCSCommand('Review', [<f-args>])$/;"	c
+VCSStatus	vcscommand.vim	/^com! -nargs=* VCSStatus call s:ExecuteVCSCommand('Status', [<f-args>])$/;"	c
+VCSUnlock	vcscommand.vim	/^com! -nargs=* VCSUnlock call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Unlock', [<f-args>]))$/;"	c
+VCSUpdate	vcscommand.vim	/^com! -nargs=0 VCSUpdate call s:MarkOrigBufferForSetup(s:ExecuteVCSCommand('Update', []))$/;"	c
+VCSVimDiff	vcscommand.vim	/^com! -nargs=* VCSVimDiff call s:VCSVimDiff(<f-args>)$/;"	c
+VCSVimDiff	vcscommand.vim	/^function! s:VCSVimDiff(...)$/;"	f
+VimDiffRestore	vcscommand.vim	/^augroup VimDiffRestore$/;"	a
+VimDiffRestore	vcscommand.vim	/^function! s:VimDiffRestore(vimDiffBuff)$/;"	f
+WipeoutCommandBuffers	vcscommand.vim	/^function! s:WipeoutCommandBuffers(originalBuffer, VCSCommand)$/;"	f
+cvsFunctions.Add	vcscvs.vim	/^function! s:cvsFunctions.Add(argList)$/;"	f
+cvsFunctions.Annotate	vcscvs.vim	/^function! s:cvsFunctions.Annotate(argList)$/;"	f
+cvsFunctions.Commit	vcscvs.vim	/^function! s:cvsFunctions.Commit(argList)$/;"	f
+cvsFunctions.Delete	vcscvs.vim	/^function! s:cvsFunctions.Delete(argList)$/;"	f
+cvsFunctions.Diff	vcscvs.vim	/^function! s:cvsFunctions.Diff(argList)$/;"	f
+cvsFunctions.GetBufferInfo	vcscvs.vim	/^function! s:cvsFunctions.GetBufferInfo()$/;"	f
+cvsFunctions.Identify	vcscvs.vim	/^function! s:cvsFunctions.Identify(buffer)$/;"	f
+cvsFunctions.Log	vcscvs.vim	/^function! s:cvsFunctions.Log(argList)$/;"	f
+cvsFunctions.Revert	vcscvs.vim	/^function! s:cvsFunctions.Revert(argList)$/;"	f
+cvsFunctions.Review	vcscvs.vim	/^function! s:cvsFunctions.Review(argList)$/;"	f
+cvsFunctions.Status	vcscvs.vim	/^function! s:cvsFunctions.Status(argList)$/;"	f
+cvsFunctions.Update	vcscvs.vim	/^function! s:cvsFunctions.Update(argList)$/;"	f
+g:Perl_Dictionary_File	perl-support.vim	/^  let g:Perl_Dictionary_File       = s:plugin_dir.'perl-support\/wordlists\/perl.list'$/;"	v
+g:Perl_PerlRegexAnalyser	perl-support.vim	/^let g:Perl_PerlRegexAnalyser			= 'yes'$/;"	v
+g:Perl_PerlTags	perl-support.vim	/^let g:Perl_PerlTags		= 'enabled'						" enable use of Perl::Tags$/;"	v
+g:Perl_PluginDir	perl-support.vim	/^let g:Perl_PluginDir	= s:plugin_dir        " used for communication with ftplugin\/perl.vim$/;"	v
+g:Perl_Version	perl-support.vim	/^let g:Perl_Version= "4.0.1"$/;"	v
+g:VCSCOMMAND_IDENTIFY_EXACT	vcscommand.vim	/^let g:VCSCOMMAND_IDENTIFY_EXACT = 1$/;"	v
+g:VCSCOMMAND_IDENTIFY_INEXACT	vcscommand.vim	/^let g:VCSCOMMAND_IDENTIFY_INEXACT = -1$/;"	v
+gitFunctions.Add	vcsgit.vim	/^function! s:gitFunctions.Add(argList)$/;"	f
+gitFunctions.Annotate	vcsgit.vim	/^function! s:gitFunctions.Annotate(argList)$/;"	f
+gitFunctions.Commit	vcsgit.vim	/^function! s:gitFunctions.Commit(argList)$/;"	f
+gitFunctions.Delete	vcsgit.vim	/^function! s:gitFunctions.Delete(argList)$/;"	f
+gitFunctions.Diff	vcsgit.vim	/^function! s:gitFunctions.Diff(argList)$/;"	f
+gitFunctions.GetBufferInfo	vcsgit.vim	/^function! s:gitFunctions.GetBufferInfo()$/;"	f
+gitFunctions.Identify	vcsgit.vim	/^function! s:gitFunctions.Identify(buffer)$/;"	f
+gitFunctions.Log	vcsgit.vim	/^function! s:gitFunctions.Log(argList)$/;"	f
+gitFunctions.Revert	vcsgit.vim	/^function! s:gitFunctions.Revert(argList)$/;"	f
+gitFunctions.Review	vcsgit.vim	/^function! s:gitFunctions.Review(argList)$/;"	f
+gitFunctions.Status	vcsgit.vim	/^function! s:gitFunctions.Status(argList)$/;"	f
+gitFunctions.Update	vcsgit.vim	/^function! s:gitFunctions.Update(argList)$/;"	f
+loaded_VCSCommand	vcscommand.vim	/^let loaded_VCSCommand = 1$/;"	v
+loaded_VCSCommand	vcscommand.vim	/^let loaded_VCSCommand = 2$/;"	v
+loaded_tagexplorer	tagexplorer.vim	/^let loaded_tagexplorer=1$/;"	v
+mappingInfo	vcscvs.vim	/^let mappingInfo = [$/;"	v
+s:Attribute	perl-support.vim	/^let s:Attribute                = { 'below':'', 'above':'', 'start':'', 'append':'', 'insert':'' }$/;"	v
+s:MSWIN	perl-support.vim	/^let s:MSWIN = has("win16") || has("win32")   || has("win64")    || has("win95")$/;"	v
+s:MsgInsNotAvail	perl-support.vim	/^let s:MsgInsNotAvail	= "insertion not available for a fold"$/;"	v
+s:PCInnerErrorFormat	perl-support.vim	/^let s:PCInnerErrorFormat	= ',\\%+A%.%#\\ at\\ %f\\ line\\ %l%.%#'$/;"	v
+s:PCerrorFormat1	perl-support.vim	/^let s:PCerrorFormat1 			= '%f:%l:%c:%m'         . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat10	perl-support.vim	/^let s:PCerrorFormat10			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat11	perl-support.vim	/^let s:PCerrorFormat11			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat2	perl-support.vim	/^let s:PCerrorFormat2 			= '%f:\\ (%l:%c)\\ %m'    . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat3	perl-support.vim	/^let s:PCerrorFormat3 			= '%m\\ at\\ %f\\ line\\ %l'. s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat4	perl-support.vim	/^let s:PCerrorFormat4 			= '%f:%l:%c:%m'         . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat5	perl-support.vim	/^let s:PCerrorFormat5 			= '%f:%l:%c:%m'         . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat6	perl-support.vim	/^let s:PCerrorFormat6 			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat7	perl-support.vim	/^let s:PCerrorFormat7 			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat8	perl-support.vim	/^let s:PCerrorFormat8 			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCerrorFormat9	perl-support.vim	/^let s:PCerrorFormat9 			= '%f:%l:%m'            . s:PCInnerErrorFormat$/;"	v
+s:PCseverityName	perl-support.vim	/^let s:PCseverityName	= [ "DUMMY", "brutal", "cruel", "harsh", "stern", "gentle" ]$/;"	v
+s:PCverbosityFormat1	perl-support.vim	/^let s:PCverbosityFormat1 	= 1$/;"	v
+s:PCverbosityFormat10	perl-support.vim	/^let s:PCverbosityFormat10	= '\\"\\\\%f:\\\\%l:\\\\%c:\\\\%m\\.\\\\n\\ \\ \\\\%p\\ (Severity:\\ \\\\%s)\\\\n\\\\%d\\\\n\\"'$/;"	v
+s:PCverbosityFormat11	perl-support.vim	/^let s:PCverbosityFormat11	= '\\"\\\\%f:\\\\%l:\\\\%m,\\ near\\ ' . "'\\\\\\\\%r'" . '\\.\\\\n\\ \\ \\\\%p\\ (Severity:\\ \\\\%s)\\\\n\\\\%d\\\\n\\"'$/;"	v
+s:PCverbosityFormat2	perl-support.vim	/^let s:PCverbosityFormat2 	= 2$/;"	v
+s:PCverbosityFormat3	perl-support.vim	/^let s:PCverbosityFormat3 	= 3$/;"	v
+s:PCverbosityFormat4	perl-support.vim	/^let s:PCverbosityFormat4 	= '\\"\\\\%f:\\\\%l:\\\\%c:\\\\%m\\.\\ \\ \\\\%e\\ \\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:PCverbosityFormat5	perl-support.vim	/^let s:PCverbosityFormat5 	= '\\"\\\\%f:\\\\%l:\\\\%c:\\\\%m\\.\\ \\ \\\\%e\\ \\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:PCverbosityFormat6	perl-support.vim	/^let s:PCverbosityFormat6 	= '\\"\\\\%f:\\\\%l:\\\\%m,\\ near\\ ' . "'\\\\\\\\%r'\\." . '\\ \\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:PCverbosityFormat7	perl-support.vim	/^let s:PCverbosityFormat7 	= '\\"\\\\%f:\\\\%l:\\\\%m,\\ near\\ ' . "'\\\\\\\\%r'\\." . '\\ \\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:PCverbosityFormat8	perl-support.vim	/^let s:PCverbosityFormat8 	= '\\"\\\\%f:\\\\%l:\\\\%c:[\\\\%p]\\ \\\\%m\\.\\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:PCverbosityFormat9	perl-support.vim	/^let s:PCverbosityFormat9 	= '\\"\\\\%f:\\\\%l:[\\\\%p]\\ \\\\%m,\\ near\\ ' . "'\\\\\\\\%r'" . '\\.\\ (Severity:\\ \\\\%s)\\\\n\\"'$/;"	v
+s:Perl_Attribute	perl-support.vim	/^let s:Perl_Attribute           = {}$/;"	v
+s:Perl_CmtCounter	perl-support.vim	/^let s:Perl_CmtCounter   = 0$/;"	v
+s:Perl_CmtLabel	perl-support.vim	/^let s:Perl_CmtLabel     = "BlockCommentNo_"$/;"	v
+s:Perl_Debugger	perl-support.vim	/^let s:Perl_Debugger              = "perl"$/;"	v
+s:Perl_Display	perl-support.vim	/^	let s:Perl_Display	= system("echo -n $DISPLAY")$/;"	v
+s:Perl_Display	perl-support.vim	/^	let s:Perl_Display  = ''$/;"	v
+s:Perl_EfmPerl	perl-support.vim	/^let s:Perl_EfmPerl                 = s:plugin_dir.'perl-support\/scripts\/efm_perl.pl'$/;"	v
+s:Perl_ExpansionCounter	perl-support.vim	/^let s:Perl_ExpansionCounter     = {}$/;"	v
+s:Perl_ExpansionLimit	perl-support.vim	/^let s:Perl_ExpansionLimit      = 10$/;"	v
+s:Perl_ExpansionRegex	perl-support.vim	/^let s:Perl_ExpansionRegex				 = '|?'.s:Perl_MacroNameRegex.'\\(:\\a\\)\\?|'$/;"	v
+s:Perl_FileVisited	perl-support.vim	/^let s:Perl_FileVisited         = []$/;"	v
+s:Perl_FormatDate	perl-support.vim	/^let s:Perl_FormatDate						 = '%x'$/;"	v
+s:Perl_FormatTime	perl-support.vim	/^let s:Perl_FormatTime						 = '%X'$/;"	v
+s:Perl_FormatYear	perl-support.vim	/^let s:Perl_FormatYear						 = '%Y'$/;"	v
+s:Perl_GlobalTemplateDir	perl-support.vim	/^let s:Perl_GlobalTemplateDir     = fnamemodify( s:Perl_GlobalTemplateFile, ":p:h" ).'\/'$/;"	v
+s:Perl_GlobalTemplateFile	perl-support.vim	/^let s:Perl_GlobalTemplateFile    = s:plugin_dir.'perl-support\/templates\/Templates'$/;"	v
+s:Perl_InterfaceVersion	perl-support.vim	/^let s:Perl_InterfaceVersion = ''$/;"	v
+s:Perl_LineEndCommColDefault	perl-support.vim	/^let s:Perl_LineEndCommColDefault = 49$/;"	v
+s:Perl_LoadMenus	perl-support.vim	/^let s:Perl_LoadMenus             = 'yes'$/;"	v
+s:Perl_LocalTemplateDir	perl-support.vim	/^let s:Perl_LocalTemplateDir      = fnamemodify( s:Perl_LocalTemplateFile, ":p:h" ).'\/'$/;"	v
+s:Perl_LocalTemplateFile	perl-support.vim	/^let s:Perl_LocalTemplateFile     = $HOME.'\/.vim\/perl-support\/templates\/Templates'$/;"	v
+s:Perl_Macro	perl-support.vim	/^let s:Perl_Macro                = {'|AUTHOR|'         : 'first name surname',$/;"	v
+s:Perl_MacroFlag	perl-support.vim	/^let	s:Perl_MacroFlag						= {	':l' : 'lowercase'			,$/;"	v
+s:Perl_MacroLineRegex	perl-support.vim	/^let s:Perl_MacroLineRegex				 = '^\\s*|'.s:Perl_MacroNameRegex.'|\\s*=\\s*\\(.*\\)'$/;"	v
+s:Perl_MacroNameRegex	perl-support.vim	/^let s:Perl_MacroNameRegex        = '\\([a-zA-Z][a-zA-Z0-9_]*\\)'$/;"	v
+s:Perl_MenuVisible	perl-support.vim	/^let s:Perl_MenuVisible = 0								" state : 0 = not visible \/ 1 = visible$/;"	v
+s:Perl_NonExpansionRegex	perl-support.vim	/^let s:Perl_NonExpansionRegex		 = '|'.s:Perl_MacroNameRegex.'\\(:\\a\\)\\?|'$/;"	v
+s:Perl_OutputBufferName	perl-support.vim	/^let s:Perl_OutputBufferName   = "Perl-Output"$/;"	v
+s:Perl_OutputBufferNumber	perl-support.vim	/^let s:Perl_OutputBufferNumber = -1$/;"	v
+s:Perl_PerlModuleList	perl-support.vim	/^let s:Perl_PerlModuleList        = s:plugin_dir.'perl-support\/modules\/perl-modules.list'$/;"	v
+s:Perl_PerlModuleListGenerator	perl-support.vim	/^let s:Perl_PerlModuleListGenerator = s:plugin_dir.'perl-support\/scripts\/pmdesc3.pl'$/;"	v
+s:Perl_PerlcriticMsg	perl-support.vim	/^let s:Perl_PerlcriticMsg     = ""$/;"	v
+s:Perl_PerlcriticOptions	perl-support.vim	/^let s:Perl_PerlcriticOptions     = ""$/;"	v
+s:Perl_PerlcriticSeverity	perl-support.vim	/^let s:Perl_PerlcriticSeverity    = 5$/;"	v
+s:Perl_PerlcriticVerbosity	perl-support.vim	/^let s:Perl_PerlcriticVerbosity   = 5$/;"	v
+s:Perl_PerldocBufferName	perl-support.vim	/^let s:Perl_PerldocBufferName       = "PERLDOC"$/;"	v
+s:Perl_PerldocHelpBufferNumber	perl-support.vim	/^let s:Perl_PerldocHelpBufferNumber = -1$/;"	v
+s:Perl_PerldocModulelistBuffer	perl-support.vim	/^let s:Perl_PerldocModulelistBuffer = -1$/;"	v
+s:Perl_PerldocSearchWord	perl-support.vim	/^let s:Perl_PerldocSearchWord       = ""$/;"	v
+s:Perl_PerldocTry	perl-support.vim	/^let s:Perl_PerldocTry              = "module"$/;"	v
+s:Perl_PodCheckMsg	perl-support.vim	/^let s:Perl_PodCheckMsg       = ""$/;"	v
+s:Perl_PodcheckerWarnings	perl-support.vim	/^let s:Perl_PodcheckerWarnings    = "yes"$/;"	v
+s:Perl_Printheader	perl-support.vim	/^let s:Perl_Printheader  		= escape( s:Perl_Printheader, ' %' )$/;"	v
+s:Perl_Printheader	perl-support.vim	/^let s:Perl_Printheader           = "%<%f%h%m%<  %=%{strftime('%x %X')}     Page %N"$/;"	v
+s:Perl_ProfileOutput	perl-support.vim	/^let s:Perl_ProfileOutput    = 'smallprof.out'$/;"	v
+s:Perl_ProfilerTimestamp	perl-support.vim	/^let s:Perl_ProfilerTimestamp     = "no"$/;"	v
+s:Perl_SyntaxCheckMsg	perl-support.vim	/^let s:Perl_SyntaxCheckMsg    = ""$/;"	v
+s:Perl_Template	perl-support.vim	/^let s:Perl_Template             = {}$/;"	v
+s:Perl_TemplateLineRegex	perl-support.vim	/^let s:Perl_TemplateLineRegex		 = '^==\\s*\\([a-zA-Z][0-9a-zA-Z'.s:Perl_TemplateNameDelimiter$/;"	v
+s:Perl_TemplateLineRegex	perl-support.vim	/^let s:Perl_TemplateLineRegex		.= ']\\+\\)\\s*==\\s*\\([a-z]\\+\\s*==\\)\\?'$/;"	v
+s:Perl_TemplateNameDelimiter	perl-support.vim	/^let s:Perl_TemplateNameDelimiter = '-+_,\\. '$/;"	v
+s:Perl_TemplateOverwrittenMsg	perl-support.vim	/^let s:Perl_TemplateOverwrittenMsg= 'yes'$/;"	v
+s:Perl_Template_Directory	perl-support.vim	/^let s:Perl_Template_Directory    = s:plugin_dir.'perl-support\/templates\/'$/;"	v
+s:Perl_TimestampFormat	perl-support.vim	/^let s:Perl_TimestampFormat  = '%y%m%d.%H%M%S'$/;"	v
+s:Perl_Wrapper	perl-support.vim	/^let s:Perl_Wrapper                 = s:plugin_dir.'perl-support\/scripts\/wrapper.sh'$/;"	v
+s:Perl_XtermDefaults	perl-support.vim	/^  let s:Perl_XtermDefaults  = s:Perl_XtermDefaults." -geometry 80x24"$/;"	v
+s:Perl_XtermDefaults	perl-support.vim	/^let s:Perl_XtermDefaults         = "-fa courier -fs 12 -geometry 80x24"$/;"	v
+s:Perl_perldoc_flags	perl-support.vim	/^  let s:Perl_perldoc_flags  = ""$/;"	v
+s:Perl_perldoc_flags	perl-support.vim	/^  let s:Perl_perldoc_flags  = "-otext"$/;"	v
+s:Perl_perltidy_module_executable	perl-support.vim	/^let s:Perl_perltidy_module_executable      = 'no'$/;"	v
+s:Perl_perltidy_startscript_executable	perl-support.vim	/^let s:Perl_perltidy_startscript_executable = 'no'$/;"	v
+s:UNIX	perl-support.vim	/^let s:UNIX	= has("unix")  || has("macunix") || has("win32unix")$/;"	v
+s:comments	tagexplorer.vim	/^let s:comments = 3$/;"	v
+s:current_dirname	tagexplorer.vim	/^let s:current_dirname = ''$/;"	v
+s:cvsExtensionMappings	vcscvs.vim	/^		let s:cvsExtensionMappings[shortCut] = commandText$/;"	v
+s:cvsExtensionMappings	vcscvs.vim	/^let s:cvsExtensionMappings = {}$/;"	v
+s:cvsFunctions	vcscvs.vim	/^let s:cvsFunctions = {}$/;"	v
+s:escfilename	perl-support.vim	/^	let s:escfilename = ' \\%#[]'$/;"	v
+s:escfilename	perl-support.vim	/^  let s:escfilename 	= ''$/;"	v
+s:gitFunctions	vcsgit.vim	/^let s:gitFunctions = {}$/;"	v
+s:installation	perl-support.vim	/^		let s:installation	= 'system'$/;"	v
+s:installation	perl-support.vim	/^	let s:installation	= 'local'$/;"	v
+s:installation	perl-support.vim	/^	let s:installation	= 'system'$/;"	v
+s:isEditFileRunning	vcscommand.vim	/^let s:isEditFileRunning = 0$/;"	v
+s:optionOverrides	vcscommand.vim	/^let s:optionOverrides = {}$/;"	v
+s:plugin_dir	perl-support.vim	/^		let s:plugin_dir  	= $HOME.'\/.vim\/'$/;"	v
+s:plugin_dir	perl-support.vim	/^		let s:plugin_dir  	= $VIM.'\/vimfiles\/'$/;"	v
+s:plugin_dir	perl-support.vim	/^  let s:plugin_dir  	= $VIM.'\\vimfiles\\'$/;"	v
+s:plugins	vcscommand.vim	/^let s:plugins = {}$/;"	v
+s:save_cpo	vcscommand.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcscvs.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcsgit.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcssvk.vim	/^let s:save_cpo=&cpo$/;"	v
+s:save_cpo	vcssvn.vim	/^let s:save_cpo=&cpo$/;"	v
+s:svkFunctions	vcssvk.vim	/^let s:svkFunctions = {}$/;"	v
+s:svnFunctions	vcssvn.vim	/^let s:svnFunctions = {}$/;"	v
+s:te_file_cnt	tagexplorer.vim	/^let s:te_file_cnt = 0$/;"	v
+s:te_winsize_chgd	tagexplorer.vim	/^let s:te_winsize_chgd = 0$/;"	v
+svkFunctions.Add	vcssvk.vim	/^function! s:svkFunctions.Add(argList)$/;"	f
+svkFunctions.Annotate	vcssvk.vim	/^function! s:svkFunctions.Annotate(argList)$/;"	f
+svkFunctions.Commit	vcssvk.vim	/^function! s:svkFunctions.Commit(argList)$/;"	f
+svkFunctions.Delete	vcssvk.vim	/^function! s:svkFunctions.Delete(argList)$/;"	f
+svkFunctions.Diff	vcssvk.vim	/^function! s:svkFunctions.Diff(argList)$/;"	f
+svkFunctions.GetBufferInfo	vcssvk.vim	/^function! s:svkFunctions.GetBufferInfo()$/;"	f
+svkFunctions.Identify	vcssvk.vim	/^function! s:svkFunctions.Identify(buffer)$/;"	f
+svkFunctions.Info	vcssvk.vim	/^function! s:svkFunctions.Info(argList)$/;"	f
+svkFunctions.Lock	vcssvk.vim	/^function! s:svkFunctions.Lock(argList)$/;"	f
+svkFunctions.Log	vcssvk.vim	/^function! s:svkFunctions.Log(argList)$/;"	f
+svkFunctions.Revert	vcssvk.vim	/^function! s:svkFunctions.Revert(argList)$/;"	f
+svkFunctions.Review	vcssvk.vim	/^function! s:svkFunctions.Review(argList)$/;"	f
+svkFunctions.Status	vcssvk.vim	/^function! s:svkFunctions.Status(argList)$/;"	f
+svkFunctions.Unlock	vcssvk.vim	/^function! s:svkFunctions.Unlock(argList)$/;"	f
+svkFunctions.Update	vcssvk.vim	/^function! s:svkFunctions.Update(argList)$/;"	f
+svnFunctions.Add	vcssvn.vim	/^function! s:svnFunctions.Add(argList)$/;"	f
+svnFunctions.Annotate	vcssvn.vim	/^function! s:svnFunctions.Annotate(argList)$/;"	f
+svnFunctions.Commit	vcssvn.vim	/^function! s:svnFunctions.Commit(argList)$/;"	f
+svnFunctions.Delete	vcssvn.vim	/^function! s:svnFunctions.Delete(argList)$/;"	f
+svnFunctions.Diff	vcssvn.vim	/^function! s:svnFunctions.Diff(argList)$/;"	f
+svnFunctions.GetBufferInfo	vcssvn.vim	/^function! s:svnFunctions.GetBufferInfo()$/;"	f
+svnFunctions.Identify	vcssvn.vim	/^function! s:svnFunctions.Identify(buffer)$/;"	f
+svnFunctions.Info	vcssvn.vim	/^function! s:svnFunctions.Info(argList)$/;"	f
+svnFunctions.Lock	vcssvn.vim	/^function! s:svnFunctions.Lock(argList)$/;"	f
+svnFunctions.Log	vcssvn.vim	/^function! s:svnFunctions.Log(argList)$/;"	f
+svnFunctions.Revert	vcssvn.vim	/^function! s:svnFunctions.Revert(argList)$/;"	f
+svnFunctions.Review	vcssvn.vim	/^function! s:svnFunctions.Review(argList)$/;"	f
+svnFunctions.Status	vcssvn.vim	/^function! s:svnFunctions.Status(argList)$/;"	f
+svnFunctions.Unlock	vcssvn.vim	/^function! s:svnFunctions.Unlock(argList)$/;"	f
+svnFunctions.Update	vcssvn.vim	/^function! s:svnFunctions.Update(argList)$/;"	f
