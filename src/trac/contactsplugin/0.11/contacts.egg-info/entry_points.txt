@@ -1,4 +1,0 @@
-[trac.plugins]
-contacts.db = contacts.db
-contacts.web_ui = contacts.web_ui
-

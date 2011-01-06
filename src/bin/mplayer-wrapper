@@ -1,2 +1,0 @@
-#!/bin/bash
-mplayer -idx -zoom -softvol -softvol-max 1000 -y 480  -x 600 -fs  -vo fbdev $@

@@ -1,3 +1,0 @@
-!profile=Arch BBS Login
-req_username(text): yournamehere
-req_password(password): yourpasshere
