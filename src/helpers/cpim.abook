@@ -1,0 +1,21 @@
+#! /usr/bin/python
+from configobj import ConfigObj
+import os, sys
+
+class Parser:
+    def __init__(self):
+        try:
+            nick=sys.argv[1]
+        except:
+            nick=''
+        self.parse(nick)
+
+    def parse(self, nick, file=os.path.expanduser('~/.abook/addressbook')):
+        conf=ConfigObj(file, list_values=False)
+        for chunk in filter(lambda d: "nick" in d and "email" in d and 'mobile'\
+                in d and 'phone' in d, conf.values()):
+            if nick == chunk['nick'] or not nick:
+                print "%s <%s> - %s, %s" %(chunk['name'], \
+                 chunk["email"].split(",")[0], chunk['phone'], chunk['mobile'])
+
+Parser()

@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/cpim.conf
+[[ ! -e ~/.cpim/abook ]] && {  mkdir -p ~/.cpim/abook/ ; cp $PREFIX/share/cpim/abook.cfg ~/.cpim/abook/; } &>/dev/null
+abook --datafile ~/.cpim/abook/addressbook -C ~/.cpim/abook/abook.cfg

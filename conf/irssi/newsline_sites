@@ -1,0 +1,9 @@
+$sites = {
+  'Freshmeat' => {
+    'enable' => 1,
+    'page' => 'http://freshmeat.net/backend/fm.rdf',
+    'title' => '',
+    'maxnews' => 0,
+    'description' => ''
+  }
+};

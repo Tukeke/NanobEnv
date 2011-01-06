@@ -1,0 +1,8 @@
+hardstatus alwayslastline
+hardstatus string "%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r} (%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g} ] [ Bat: %23` ] %21`"
+shelltitle " $ | bash "
+
+screen -t Mutt bash # Execute Mutt here
+stuff "cpim.mutt\015"
+screen -t Irssi bash # Execute irssi here
+stuff "cpim.irssi\015"
