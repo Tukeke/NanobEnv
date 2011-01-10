@@ -1,4 +1,0 @@
-#!/bin/bash
-source /etc/cpim.conf
-[[ ! -e ~/.cpim/screenrc ]] && { mkdir -p ~/.cpim && cp $PREFIX/share/cpim/screenrc ~/.cpim/; } &>/dev/null
-screen -c ~/.cpim/screenrc

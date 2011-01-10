@@ -1,6 +1,6 @@
 # user data 
-set realname = "CPIM USER, change me"
-set from = "cpim@user.com"
+set realname = "copim USER, change me"
+set from = "copim@user.com"
 set use_from = yes
 set envelope_from ="yes"
 
@@ -8,10 +8,10 @@ set envelope_from ="yes"
 mailboxes /var/spool/mail/xayon =sent 
 
 # Use a signature
-set signature="~/.cpim/signature"
+set signature="~/.copim/signature"
 
 # Alias file
-set alias_file = ~/.cpim/Mail/mutt_aliases # In their own file
+set alias_file = ~/.copim/Mail/mutt_aliases # In their own file
 
 # Use msmtp rather than sendmail. Check that 
 # the path is correct for your system:
@@ -22,7 +22,7 @@ set spoolfile = /var/spool/mail/xayon
 
 #======================================================#
 # Folders
-set folder="$HOME/.cpim/Mail"     # Local mailboxes stored here
+set folder="$HOME/.copim/Mail"     # Local mailboxes stored here
 set record="+sent"           # Where to store sent messages
 set postponed="+postponed"   # Where to store draft messages
 set mbox_type=mbox           # Mailbox type
@@ -49,13 +49,13 @@ set edit_headers=yes      # See the headers when editing
 # Aliases
 
 
-source ~/.cpim/Mail/mutt_aliases           # Source them
+source ~/.copim/Mail/mutt_aliases           # Source them
 set sort_alias=alias                 # Sort alphabetically
 
 #======================================================#
 # Colours: defaults are a little bleak so experiment!
 
-#source ~/.cpim/mutt/mutt_colors            # In their own file 
+#source ~/.copim/mutt/mutt_colors            # In their own file 
 
 #======================================================#
 # Lists: An example using the mutt-users list:

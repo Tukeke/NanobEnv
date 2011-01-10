@@ -1,4 +1,0 @@
-#!/bin/bash
-source /etc/cpim.conf
-[[ ! -e ~/.cpim/muttrc ]] && { mkdir -p ~/.cpim/ ; cp $PREFIX/share/cpim/muttrc ~/.cpim/ ;} &>/dev/null
-mutt -F ~/.cpim/muttrc

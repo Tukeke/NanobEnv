@@ -1,4 +1,0 @@
-#!/bin/bash
-killall skype
-sleep 1
-xvfb-run -n0 cpim.skype &

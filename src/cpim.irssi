@@ -1,4 +1,0 @@
-#!/bin/bash
-source /etc/cpim.conf
-[[ ! -e ~/.cpim/irssi ]] && { mkdir ~/.cpim/ ; cp -r $PREFIX/share/cpim/irssi ~/.cpim/; } &>/dev/null
-irssi --home=~/.cpim/irssi --config ~/.cpim/irssi/config
