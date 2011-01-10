@@ -1,0 +1,2 @@
+For reminders to work you must have installed ical2rem.pl script on your path (as just ical2rem) and make a cron job like this:
+0-59/15 * * * * copim.c2r

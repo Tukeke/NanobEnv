@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/copim.conf
+[[ ! -e ~/.copim/remind ]] && { mkdir -p ~/.copim/remind/ ; cp $PREFIX/share/copim/reminders ~/.copim/remind/; } &>/dev/null
+remind -Kcopim.notifier ~/.copim/remind/reminders
