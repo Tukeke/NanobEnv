@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/copim.conf
+[[ ! -e ~/.copim/screenrc ]] && { mkdir -p ~/.copim && cp $PREFIX/share/copim/screenrc ~/.copim/; } &>/dev/null
+screen -c ~/.copim/screenrc

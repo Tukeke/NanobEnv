@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/copim.conf
+[[ ! -e ~/.copim/muttrc ]] && { mkdir -p ~/.copim/ ; cp $PREFIX/share/copim/muttrc ~/.copim/ ;} &>/dev/null
+mutt -F ~/.copim/muttrc
