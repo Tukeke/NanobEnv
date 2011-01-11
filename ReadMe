@@ -1,0 +1,7 @@
+CoPim is a set of tools designed to integrate Mutt Calcurse (with remind support) Abook And Irssi (with optional skype support) inside screen to have a full-featured personal information manager in a standard linux console, without any need for a useless GUI.
+
+Current dependecies:
+    - Recommends: Skype bitlbee 
+    - Deps: libnet-twitter-perl calcurse xvfb mutt-patched abook irssi screen
+
+To install, just install the deps (skype is non-free, you'll have to get it from skype download page) and type "make" inside the main directory. Then execute "copim", everything will be saved under ~/.copim so you can backup it (yup, your mail, your calendars, your addressbook, everything to be easily backupped)

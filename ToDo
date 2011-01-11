@@ -1,7 +1,8 @@
 Document deps.
+
+
 Redistribute ical2rem
 Make the notification script and irssi plugin work.
-Document .forward and .procmailrc usage for mail notifications
 
 With that, current functionality will be:
     - Calls via skype to numbers gotten from abook's addressbook

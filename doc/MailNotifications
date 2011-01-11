@@ -1,0 +1,7 @@
+To enable mail notifications for a specific user, you have to create a .forward pointing to procmail and a procmail rule to call copim.notifier, a sample .forward:
+
+"|IFS=' '&&exec /full/path/to/procmail -f-||exit 75 #your_login_name"
+
+
+A sample procmailrc is provided under /usr/share/doc/copim/examples/procmailrc
+This file will launch the notifier foreach new mail received, use carefully when having troubles to procmail, as it can launch quite a bunch of notifications at the same time a freeze your system.
