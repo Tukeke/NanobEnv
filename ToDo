@@ -1,6 +1,5 @@
 Document deps.
 
-
 Redistribute ical2rem
 Make the notification script and irssi plugin work.
 
@@ -8,7 +7,7 @@ With that, current functionality will be:
     - Calls via skype to numbers gotten from abook's addressbook
     - Mails via mutt to mails gotten ... same as above
         - Patched bar and so on.
-    - Calcurse calendar, integrated with remind and irssi to send remote desktop alerts.
+    - Wyrd calendar, integrated with remind and irssi to send remote desktop alerts.
     - New mail alerts
     - Twitter
     - Rss

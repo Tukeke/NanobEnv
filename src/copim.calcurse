@@ -1,4 +1,0 @@
-#!/bin/bash
-source /etc/copim.conf
-[[ ! -e ~/.copim/calcurse ]] && { mkdir ~/.copim/ ; cp -r $PREFIX/share/copim/calcurse ~/.copim/; } &>/dev/null
-calcurse -D ~/.copim/calcurse
