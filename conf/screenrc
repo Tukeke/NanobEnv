@@ -3,8 +3,8 @@ hardstatus string "%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r} (%{W}%n*%f%t%?(%
 shelltitle " $ | bash "
 
 screen -t Mail bash # Execute Mutt here
-stuff "cpim.mutt\015"
+stuff "copim.mutt\015"
 screen -t IM bash # Execute irssi here
-stuff "cpim.irssi\015"
+stuff "copim.irssi\015"
 screen -t Calendar bash # Execute wyrd here
-stuff "cpim.wyrd\015"
+stuff "copim.wyrd\015"
