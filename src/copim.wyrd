@@ -1,4 +1,4 @@
 #!/bin/bash
 [[ ! -e ~/.copim/remind/ ]] && { mkdir ~/.copim/ ; cp -r $PREFIX/share/copim/remind ~/.copim/; } &>/dev/null
 copim.remind
-wyrd ~/.copim/remind/reminders
+LC_ALL=C wyrd ~/.copim/remind/reminders
