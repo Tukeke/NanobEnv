@@ -1,3 +1,4 @@
 #!/bin/bash
-[[ ! -e ~/.copim/Xresources ]] && { mkdir -p ~/.copim/ ; cp -r $PREFIX/share/copim/Xresource ~/.copim/; } &>/dev/null
-xrdb -merge .copim/Xresources && xterm -e copim
+source /etc/copim.conf
+[[ ! -e ~/.copim/Xresources ]] && { mkdir -p ~/.copim/ ; cp -r $PREFIX/share/copim/Xresources ~/.copim/; } &>/dev/null
+xrdb -merge ~/.copim/Xresources && xterm -e copim
