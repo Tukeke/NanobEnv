@@ -1,4 +1,4 @@
 #!/bin/bash
 source /etc/copim.conf
 [[ ! -e ~/.copim/Xresources ]] && { mkdir -p ~/.copim/ ; cp -r $PREFIX/share/copim/Xresources ~/.copim/; } &>/dev/null
-xrdb -merge ~/.copim/Xresources && xterm -e copim
+xrdb -merge ~/.copim/Xresources && x-terminal-emulator -e copim
