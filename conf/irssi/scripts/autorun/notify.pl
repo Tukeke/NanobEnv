@@ -1,1 +1,1 @@
-notify/notify.pl
+../notify/notify.pl
