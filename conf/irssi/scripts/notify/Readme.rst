@@ -21,8 +21,8 @@ Make sure to have in all your clients' xresources file (normally .Xresource or .
 
 ::
 
-    *XTerm*printerAutoClose: true
-    *XTerm*printerCommand: /usr/bin/notifier
+    xterm*printerAutoClose: true
+    xterm*printerCommand: /usr/bin/notifier
  
 Replace /usr/bin/notifier for the path where you put the notifier. The notifier must be in the client's side, as this conf file, not in the server.
 
