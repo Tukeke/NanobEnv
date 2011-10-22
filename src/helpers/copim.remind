@@ -2,7 +2,7 @@
 source /etc/copim.conf
 
 runremind(){
-    remind '-kcopim.notifier %s' -z ~/.copim/remind/reminders &
+    remind -z -k"echo /notify_manager '%s'" > ~/.copim/irssi/remote-control -z ~/.copim/remind/reminders &
     echo $! > ~/.copim/remind/pid
 }
 

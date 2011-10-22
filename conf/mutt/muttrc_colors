@@ -1,0 +1,13 @@
+color header yellow black Subject:
+color header brightcyan black .
+color body brightyellow black [_a-z\.\$A-Z0-9-]+@[a-zA-Z0-9\./\-]+
+color body yellow black (http|ftp)://[_a-zA-Z0-9\./~\-]+
+color quoted green black
+color signature brightblue black
+# color indicator yellow blue
+color attachment yellow black
+color tree red black
+color indicator black cyan
+color status yellow blue
+color tilde blue black
+color normal default default

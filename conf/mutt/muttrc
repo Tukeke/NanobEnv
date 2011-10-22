@@ -1,0 +1,36 @@
+#======================================================#
+# IMAP 
+set current_account_name="dlabs" # Set default account here.
+source ~/.copim/mutt/muttrc_imap
+
+#======================================================#
+# Aliases
+source ~/.copim/Mail/mutt_aliases           # Source them
+
+#======================================================#
+# Colours: defaults are a little bleak so experiment!
+source ~/.copim/mutt/muttrc_colors            # In their own file 
+
+#======================================================#
+# Sidebar 
+source ~/.copim/mutt/muttrc_sidebar 
+
+#=====================================================#
+# Abook integration
+source ~/.copim/mutt/muttrc_abook
+
+# =================================================== #
+# Pgp integration 
+source ~/.copim/mutt/muttrc_pgp
+
+#======================================================#
+# Odds and ends
+source ~/.copim/mutt/muttrc_style 
+
+#=======================================================#
+# user data and multiple account management.
+# For multi-account support add lines like this one: 
+folder-hook imaps://dfrancos@degeneratedlabs.net@imap.gmail.com:993 'set current_account_name="dlabs"; source mutt_imap' # This is for multi-account, copy it with another user info and muttrc_foo as you need
+# folder-hook imaps://anotheruser@degeneratedlabs.net@imap.gmail.com:993 'source ~/.copim/muttrc_anotheruser'
+# And then create ~/.copim/mutt/muttrc_<ACCOUNT_NAME> files (you can base them on muttrc_dlabs) with correct headers (see muttrc_dlabs)
+

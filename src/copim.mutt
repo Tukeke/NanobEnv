@@ -1,10 +1,4 @@
 #!/bin/bash
 source /etc/copim.conf
-[[ ! -e ~/.copim/muttrc ]] && { mkdir -p ~/.copim/ ; cp $PREFIX/share/copim/muttrc ~/.copim/ ;} &>/dev/null
-
-[[ ! -e ~/.copim/gpg_already_asked ]] && { copim.gpg 2>/dev/null; } || {
-    read -p "Do you want to be asked next time you start mutt? [y|N]"
-    [[ "$REPLY" != "y" ]] && touch ~/.copim/gpg_already_asked
-}
-
-mutt -F ~/.copim/muttrc
+[[ ! -e ~/.copim/mutt/muttrc ]] && { mkdir -p ~/.copim/ ; cp -r $PREFIX/share/copim/mutt/ ~/.copim/ ;} &>/dev/null
+mutt -F ~/.copim/mutt/muttrc

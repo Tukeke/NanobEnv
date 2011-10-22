@@ -1,0 +1,5 @@
+#!/bin/bash
+tmp=$(mktemp)
+cp ~/.abook/addressbook $tmp
+goobook abook_export >> $tmp
+abook --datafile $tmp $@
