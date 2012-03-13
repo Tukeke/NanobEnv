@@ -1,0 +1,5 @@
+[DEFAULT]
+email: your@email.com 
+password: some secret pass
+filter_groupless_contacts: yes
+

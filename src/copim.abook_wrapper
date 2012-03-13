@@ -1,5 +1,14 @@
 #!/bin/bash
 tmp=$(mktemp)
+[[ ! -e ~/.copim/goobook ]] && {
+    echo "This is the first time you execute goobook wrapper for CPIM."
+    echo "~/.copim/goobook/sample file will be created now, edit it, and add as many as you need on that directory (one foreach account)"
+    cp -r /usr/share/copim/goobook ~/.copim/
+}
+
 cp ~/.abook/addressbook $tmp
-goobook abook_export >> $tmp
+for i in ~/.copim/goobook/*; do
+    rm ~/.goobook_cache
+    goobook -c $i abook_export >> $tmp
+done
 abook --datafile $tmp $@
