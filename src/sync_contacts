@@ -1,0 +1,3 @@
+#!/bin/bash
+driver_=$1; shift;
+[[ ${driver_} == "abook" ]] && pimshit_call sync_contacts

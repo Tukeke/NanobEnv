@@ -1,0 +1,5 @@
+#!/bin/bash
+source /etc/pimshit.conf
+pimshit sync_calendar
+pimshit_call calendar
+pimshit sync_calendar

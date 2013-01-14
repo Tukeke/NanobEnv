@@ -1,0 +1,32 @@
+source ~/.pimshit/Mail/mutt_aliases   # Source them
+
+#======================================================#
+# Colours
+source ~/.pimshit/mutt/muttrc_colors# In their own file 
+
+#======================================================#
+# Sidebar 
+source ~/.pimshit/mutt/muttrc_sidebar 
+
+#=====================================================#
+# Abook integration
+source ~/.pimshit/mutt/muttrc_abook
+
+# =================================================== #
+# Pgp integration 
+source ~/.pimshit/mutt/muttrc_pgp
+
+#======================================================#
+# Odds and ends
+source ~/.pimshit/mutt/muttrc_style 
+
+set realname = "REPLACEREALNAME"
+set from = "REPLACEFROM"
+set imap_user = 'REPLACEUSER'
+set imap_pass = 'REPLACEPASS'
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Gmail]/Drafts"
+set imap_check_subscribed
+set smtp_url = "smtp://REPLACEUSER@smtp.gmail.com:587/"
+set smtp_pass = "REPLACEPASS"

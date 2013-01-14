@@ -1,8 +1,0 @@
-source ~/.copim/muttrc_$current_account_name # Source here default config
-
-set spoolfile = imaps://imap.gmail.com:993/INBOX
-set folder = imaps://imap.gmail.com:993
-set record="imaps://imap.gmail.com/[Gmail]/Sent Mail"
-set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
-set sendmail="/usr/bin/msmtp -C ~/.copim/msmtprc -a $current_account_name"
-mailboxes `copim.mutt_imap_folders ~/.copim/mutt/muttrc_$current_account_name`

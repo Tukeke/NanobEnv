@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/pimshit.conf
+pimshit_call contacts \
+    $(${wd}/sync_contacts ${drivers[contact]}) ${@}

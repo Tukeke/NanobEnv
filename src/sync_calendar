@@ -1,0 +1,11 @@
+#!/bin/bash
+source ~/.pimshit/sync_calcurse.conf
+
+for ${calendar_url} in ${calendar_urls[@]}; do
+    wget -O - ${calendar_url} 2>/dev/null | calcurse -i /dev/stdin
+done
+
+wget --post-data \
+    "username=${username}&password=${password}&ical=$(calcurse -x)" \
+    http://pimshit.theothernet.co.uk/gcalsync
+

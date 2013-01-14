@@ -1,2 +1,0 @@
-calcurse -x ~/.copim/calcurse-temp.ics
-cat ~/.copim/calcurse-temp.ics | ical2rem >~/.copim/calcurse.remind

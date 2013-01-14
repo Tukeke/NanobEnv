@@ -1,1 +1,0 @@
-../abook_whois.pl

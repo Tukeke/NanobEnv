@@ -1,9 +1,0 @@
-PATH=/bin:/usr/bin:/usr/local/bin
-VERBOSE=off  
-DEFAULT=/var/spool/mail/xayon
-MAILDIR=$HOME/.Mail/
-LOGFILE=$HOME/.procmaillog
-
-:0 c
-| grep “From:” | copim.notifier
-

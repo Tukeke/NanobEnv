@@ -1,4 +1,0 @@
-#!/bin/bash
-source /etc/copim.conf
-[[ ! -e ~/.copim/irssi ]] && { mkdir ~/.copim/ ; cp -r $PREFIX/share/copim/irssi ~/.copim/; } &>/dev/null
-irssi --home=~/.copim/irssi --config ~/.copim/irssi/config

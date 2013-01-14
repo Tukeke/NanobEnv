@@ -1,0 +1,25 @@
+#!/bin/bash
+source /etc/pimshit.conf
+command=$1; shift;
+for path in ${paths[@]}; do [[ -e $path ]] && wd=$path; done
+
+[[ ! $command ]] && {
+    echo "Welcome to pimshit. Possible commands are: "
+    read -p "$(echo -e "${!drivers[@]}\n> ")" command
+}
+
+lpath=~/.pimshit/${drivers[$command]}
+[[ ! -e $lpath ]] && {
+    mkdir -p $lpath
+    read -p "This is the first time you execute this command, press enter to enter setup"
+    $wd/wizards/${drivers[$command]}
+}
+
+{
+    {
+        [[ -e $wd/$command ]] && $wd/$command ${@} || pimshit_call $command ${@} 
+    }
+    [[ $? != 0 ]] && {
+        echo "Could not execute program. Check ~/.pimshit/$command.log for more details"
+    }
+} 2>~/.pimshit/$command.log

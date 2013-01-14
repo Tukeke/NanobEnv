@@ -1,7 +1,8 @@
+DPATH="/usr/"
+all: install
+
 install:
-	install -d /usr/share/copim
-	cp -r conf/* /usr/share/copim
-	install src/copim /usr/bin
-	install src/*.* /usr/bin
-	mv /usr/bin/copim.conf /etc
-	install src/helpers/* /usr/bin 
+	install -d $(DESTDIR)/$(DPATH)/share/pimshit
+	cp -r src/* $(DESTDIR)/$(DPATH)/share/pimshit
+	install pimshit.conf /etc/
+	ln -s $(DESTDIR)/$(DPATH)/share/pimshit/pimshit $(DESTDIR)/$(DPATH)/bin/pimshit

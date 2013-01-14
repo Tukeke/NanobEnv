@@ -1,6 +1,0 @@
-# X_Cpim_Server: imap.gmail.com:993 
-set realname = "David Francos Cuartero"
-set from = "dfrancos@degeneratedlabs.net"
-set signature="~/.copim/signature_dlabs"
-set imap_user = 'dfrancos@degeneratedlabs.net'
-set imap_pass = 'my_secret_password'

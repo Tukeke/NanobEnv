@@ -1,0 +1,7 @@
+set query_command = "pimshit contacts --mutt-query '%s'"
+macro generic,index,pager \ck "<shell-escape>pimshit contacts<return>" "Launch contact manager" # Press ctrl+K to open abook FIXME : Document this.
+macro index,pager A "<pipe-message>pimshit contacts --add-email<return>" "Add the sender address to abook"
+macro pager "w"      "<enter-command>set pager_index_lines=4 <enter>" 
+macro pager "\Cx\Cs" "<pipe-message>cat > ~/"
+set pager_index_lines=15
+
