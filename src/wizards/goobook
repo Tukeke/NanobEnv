@@ -9,5 +9,5 @@ cp -r $wd/config/goobook/* ~/.pimshit/goobook/
     read -p "Enter password: " password
 }
 
-sed -i "s/$username/REPLACEUSER/g" ~/.pimshit/goobook/goobookrc
-sed -i "s/$password/REPLACEPASS/g" ~/.pimshit/goobook/goobookrc
+sed -i "s/REPLACEUSER/$username/g" ~/.pimshit/goobook/goobookrc
+sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/goobook/goobookrc

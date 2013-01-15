@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 source /etc/pimshit.conf
 cp -r $wd/config/mutt/* ~/.pimshit/mutt/
 
@@ -17,9 +17,9 @@ cp -r $wd/config/mutt/* ~/.pimshit/mutt/
     from="${username}@gmail.com"
 }
 
-sed -i "s/$username/REPLACEUSER/g" ~/.pimshit/mutt/muttrc
-sed -i "s/$password/REPLACEPASS/g" ~/.pimshit/mutt/muttrc
-sed -i "s/$realname/REPLACEREALNAME/g" ~/.pimshit/mutt/muttrc
-sed -i "s/$from/REPLACEFROM/g" ~/.pimshit/mutt/muttrc
+sed -i "s/REPLACEUSER/$username/g" ~/.pimshit/mutt/muttrc
+sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/mutt/muttrc
+sed -i "s/REPLACEREALNAME/$realname/g" ~/.pimshit/mutt/muttrc
+sed -i "s/REPLACEFROM/$from/g" ~/.pimshit/mutt/muttrc
 
 source $wd/wizards/goobook
