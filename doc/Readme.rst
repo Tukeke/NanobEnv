@@ -14,7 +14,7 @@ Pimshit provides
     - Google Calendar integration
     - Google Contacts integration
     - Gmail integration
-    - (planned): Nice wizards for first configs
+    - Nice wizards for first configs
     - Solarized colors for almost everything
     - Integration with bitlbee
       - (planned): calls with gtalksms
