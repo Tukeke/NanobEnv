@@ -2,10 +2,10 @@
 source ~/.pimshit/sync_calcurse.conf
 
 for ${calendar_url} in ${calendar_urls[@]}; do
-    wget -O - ${calendar_url} 2>/dev/null | calcurse -i /dev/stdin
+    wget -O - ${calendar_url} 2>/dev/null | ${drivercmds[${drivers[calendar]}]} -i /dev/stdin
 done
 
 wget --post-data \
-    "username=${username}&password=${password}&ical=$(calcurse -x)" \
+    "username=${username}&password=${password}&ical=$(${drivercmds[${drivers[calendar]}]} -x)" \
     http://pimshit.theothernet.co.uk/gcalsync
 
