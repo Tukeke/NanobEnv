@@ -1,0 +1,25 @@
+#!/bin/bash
+source /etc/pimshit.conf
+cp -r $wd/config/mutt/* ~/.pimshit/mutt/
+
+[[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
+    # Interactive mode
+    echo "This setup will configure your GMail user and password"
+    read -p "If you want to use a different provider, edit ~/.pimshit/mutt/muttrc later"
+    read -p "Enter username: " username
+    read -p "Enter password: " password
+    read -p "Enter your real name: " realname
+}
+
+[[ $username == *@* ]] && {
+    from=$username;
+} || {
+    from="${username}@gmail.com"
+}
+
+sed -i "s/$username/REPLACEUSER/g" ~/.pimshit/mutt/muttrc
+sed -i "s/$password/REPLACEPASS/g" ~/.pimshit/mutt/muttrc
+sed -i "s/$realname/REPLACEREALNAME/g" ~/.pimshit/mutt/muttrc
+sed -i "s/$from/REPLACEFROM/g" ~/.pimshit/mutt/muttrc
+
+source $wd/wizards/goobook
