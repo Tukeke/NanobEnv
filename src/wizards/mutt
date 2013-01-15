@@ -1,6 +1,5 @@
 #!/bin/bash
 source /etc/pimshit.conf
-cp -r $wd/config/mutt/* ~/.pimshit/mutt/
 
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
     # Interactive mode
@@ -9,7 +8,11 @@ cp -r $wd/config/mutt/* ~/.pimshit/mutt/
     read -p "Enter username: " username
     read -p "Enter password: " password
     read -p "Enter your real name: " realname
+} || {
+    mkdir ~/.pimshit/mutt/
 }
+
+cp -r $wd/config/mutt/* ~/.pimshit/mutt/
 
 [[ $username == *@* ]] && {
     from=$username;

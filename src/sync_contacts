@@ -1,3 +1,11 @@
 #!/bin/bash
 driver_=$1; shift;
-[[ ${driver_} == "abook" ]] && pimshit_call sync_contacts
+{
+    [[ ${driver_} == "abook" ]] && {
+        pimshit_call sync_contacts abook_export >> ~/.pimshit/goobook/contacts.tmp
+        diff -biw ~/.pimshit/goobook/contacts.tmp ~/.pimshit/goobook/contacts| sed -n 's/^> //p' >>  ~/.pimshit/abook/addressbook
+        cp ~/.pimshit/goobook/contacts.tmp ~/.pimshit/goobook/contacts
+    }
+} &>~/.pimshit/sync_contacts.log
+
+echo "~/.pimshit/abook/addressbook"

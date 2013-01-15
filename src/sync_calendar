@@ -1,5 +1,8 @@
 #!/bin/bash
-source ~/.pimshit/sync_calcurse.conf
+source /etc/pimshit.conf
+source ~/.pimshit/sync_calendar/${drivers[calendar]}.conf
+
+calendar_urls=( "$(cat ~/.pimshit/sync_calendar/${drivers[calendar]} )" )
 
 for ${calendar_url} in ${calendar_urls[@]}; do
     wget -O - ${calendar_url} 2>/dev/null | ${drivercmds[${drivers[calendar]}]} -i /dev/stdin

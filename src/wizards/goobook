@@ -1,13 +1,15 @@
 #!/bin/bash
 source /etc/pimshit.conf
-cp -r $wd/config/goobook/* ~/.pimshit/goobook/
 
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
     # Interactive mode
     echo "This setup will configure your Google contacts user and password"
     read -p "Enter username: " username
     read -p "Enter password: " password
+} || {
+    mkdir -p ~/.pimshit/goobook
 }
+cp -r $wd/config/goobook/* ~/.pimshit/goobook/
 
 sed -i "s/REPLACEUSER/$username/g" ~/.pimshit/goobook/goobookrc
 sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/goobook/goobookrc
