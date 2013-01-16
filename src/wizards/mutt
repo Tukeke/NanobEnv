@@ -6,7 +6,7 @@ source /etc/pimshit.conf
     echo "This setup will configure your GMail user and password"
     read -p "If you want to use a different provider, edit ~/.pimshit/mutt/muttrc later"
     read -p "Enter username: " username
-    read -p "Enter password: " password
+    read -s -p "Enter password: " password
     read -p "Enter your real name: " realname
 } || {
     mkdir ~/.pimshit/mutt/
