@@ -1,14 +1,30 @@
 #!/bin/bash
 source /etc/pimshit.conf
-source ~/.pimshit/sync_calendar/${drivers[calendar]}.conf
+#source ~/.pimshit/sync_calendar/${drivers[calendar]}.conf
 
-calendar_urls=( "$(cat ~/.pimshit/sync_calendar/${drivers[calendar]} )" )
+calendar_urls=( "$(cat ~/.pimshit/sync_calendar/${drivers[calendar]}.conf )" )
+in=`mktemp`
+out=`mktemp`
+echo "Writing to ${in} and ${out} files"
 
-for ${calendar_url} in ${calendar_urls[@]}; do
-    wget -O - ${calendar_url} 2>/dev/null | ${drivercmds[${drivers[calendar]}]} -i /dev/stdin
+rm -f ~/.pimshit/sync_calendar/current*
+cd ~/.pimshit/sync_calendar/ || exit;
+
+for cal in ${!calendar_urls[@]}; do
+    base="${drivers[calendar]}_${cal}.events";
+    wget -O current_${base} ${calendar_urls[${calendar_url}]}
+    [[ ! -e last_${base} ]] && {
+        diff -biw current_${base} last_${base} | sed -n 's/^> //p' |grep -v "DTSTAMP" >> ${in}
+        diff -biw last_${base} current_${base} | sed -n 's/^> //p' |grep -v "DTSTAMP" >> ${out}
+    } || {
+        cp current_${base} ${in};
+    }
+    mv current_${base} last_${base}
 done
 
-wget --post-data \
-    "username=${username}&password=${password}&ical=$(${drivercmds[${drivers[calendar]}]} -x)" \
-    http://pimshit.theothernet.co.uk/gcalsync
+${drivercmds[${drivers[calendar]}]} -i ${in}
 
+wget --post-data \
+    "username=${username}&password=${password}&ical=$out} -x)" \
+    http://pimshit.theothernet.co.uk/gcalsync
+exit

@@ -1,4 +1,4 @@
 #!/bin/bash
 source /etc/pimshit.conf
-$wd/wizards/sync_contacts
+$wd/wizards/sync_calendars
 mkdir ~/.pimshit/calcurse
