@@ -1,5 +1,5 @@
 #!/bin/bash
 source /etc/pimshit.conf
 for driver in ${!drivers[@]}; do
-    tmux neww pimshit $driver
+    tmux neww -n "${driver}" "pimshit ${driver}"
 done
