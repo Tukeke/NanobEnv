@@ -5,7 +5,7 @@ source /etc/pimshit.conf
     # Interactive mode
     echo "This setup will configure your Google contacts user and password"
     read -p "Enter username: " username
-    read -p "Enter password: " password
+    read -p -s "Enter password: " password
 } || {
     mkdir -p ~/.pimshit/goobook
 }
