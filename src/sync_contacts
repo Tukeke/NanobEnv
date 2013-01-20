@@ -1,11 +1,19 @@
 #!/bin/bash
+source /etc/pimshit.conf
+
 driver_=$1; shift;
 {
-    [[ ${driver_} == "abook" ]] && {
-        pimshit_call sync_contacts abook_export >> ~/.pimshit/goobook/contacts.tmp
-        diff -biw ~/.pimshit/goobook/contacts.tmp ~/.pimshit/goobook/contacts| sed -n 's/^> //p' >>  ~/.pimshit/abook/addressbook
-        cp ~/.pimshit/goobook/contacts.tmp ~/.pimshit/goobook/contacts
+    odir=~/.pimshit/${drivers[sync_contacts]}
+    ddir=~/.pimshit/${driver_}
+    ${drivercmds[${drivers[sync_contacts]}]} \
+        ${driver_}_export >> ${odir}/contacts.tmp
+    [[ -e ${odir}/contacts ]] && {
+        diff -biw ${odir}/contacts.tmp \
+            ${odir}/contacts | sed -n 's/^> //p' >> ${ddir}/addressbook
+    } || {
+        cat ${odir}/contacts.tmp >> ${ddir}/addressbook
     }
+    mv ${odir}/contacts.tmp ${odir}/contacts
 } &>~/.pimshit/sync_contacts.log
 
 echo "$HOME/.pimshit/abook/addressbook"
