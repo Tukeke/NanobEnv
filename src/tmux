@@ -1,5 +1,23 @@
 #!/bin/bash
 source /etc/pimshit.conf
-for driver in ${!drivers[@]}; do
-    tmux neww -n "${driver}" "pimshit ${driver}"
-done
+
+function launch_commands(){
+    shift
+    for driver in ${@}; do
+        tmux neww -n "${driver^}" "pimshit ${driver}"
+    done
+}
+
+function get_first(){
+    echo $1; 
+    return 0;
+}
+start_="$(get_first ${!drivers[@]})";
+
+{
+    sleep 2
+    launch_commands "${!drivers[@]}"
+} &
+tmux new -n "${start_^}" "pimshit ${start_}"
+
+
