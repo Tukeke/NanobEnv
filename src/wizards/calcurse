@@ -1,4 +1,6 @@
 #!/bin/bash
 source /etc/pimshit.conf
 $wd/wizards/sync_calendars
-mkdir ~/.pimshit/calcurse
+mkdir -p ~/.pimshit/calcurse
+cp -r $wd/config/calcurse/* ~/.pimshit/calcurse/
+

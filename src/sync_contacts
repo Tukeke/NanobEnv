@@ -8,4 +8,4 @@ driver_=$1; shift;
     }
 } &>~/.pimshit/sync_contacts.log
 
-echo "~/.pimshit/abook/addressbook"
+echo "$HOME/.pimshit/abook/addressbook"

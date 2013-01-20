@@ -7,6 +7,7 @@ source /etc/pimshit.conf
     read -p "If you want to use a different provider, edit ~/.pimshit/mutt/muttrc later"
     read -p "Enter username: " username
     read -s -p "Enter password: " password
+    echo
     read -p "Enter your real name: " realname
 } || {
     mkdir ~/.pimshit/mutt/

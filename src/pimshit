@@ -10,8 +10,10 @@ command=$1; shift;
 lpath=~/.pimshit/${drivers[$command]}
 [[ ! -e $lpath ]] && {
     mkdir -p $lpath
-    read -p "This is the first time you execute this command, press enter to enter setup"
-    $wd/wizards/${drivers[$command]}
+    [[ -e $wd/wizards/${drivers[$command]} ]] && {
+        read -p "This is the first time you execute this command, press enter to enter setup"
+        $wd/wizards/${drivers[$command]}
+    } 
 }
 
 {
