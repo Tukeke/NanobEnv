@@ -1,0 +1,8 @@
+- Integrate weechat with the contacts manager
+    - With a "call" command that can be configured to use different drivers
+    - Add to weechat the fifo stuff
+- Document that Q in mutt searches the abook-googlepowered contact list.
+- Make notifications:
+    - I'd centralize this on the weechat window, then make tmux bells.
+        - Launch to fifo when new mail is received (i'll need a watcher for that)
+        - Launch to fifo when an event is received (i'll need to configure calcurse to work on daemon mode)
