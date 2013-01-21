@@ -28,5 +28,5 @@ set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set postponed ="+[Gmail]/Drafts"
 set imap_check_subscribed
-set smtp_url = "smtp://REPLACEUSER@smtp.gmail.com:587/"
+set smtp_url = "smtps://REPLACEUSER@smtp.gmail.com:587/"
 set smtp_pass = "REPLACEPASS"
