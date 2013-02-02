@@ -1,0 +1,6 @@
+#!/bin/bash
+source /etc/pimshit.conf
+[[ ${drivers[messaging]} == "weechat" ]] && {
+    export HOME=~/.pimshit/
+}
+pimshit_call messaging
