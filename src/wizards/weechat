@@ -4,8 +4,12 @@ source /etc/pimshit.conf
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
     # Interactive mode
     echo "This setup will configure weechat for bitlbee integration"
+    read -p "Enter your nickname" nick
     read -s -p "Enter your bitlbee password (if you dont have one, on nex exec, issue the command /msg &bitlbee register <this_password>)"
 }
 
-cp -r $wd/config/weechat/* ~/.pimshit/weechat
+cp -r $wd/config/weechat/* ~/.pimshit/.weechat
 sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/weechat/irc.conf
+sed -i "s/REPLACENICKS/$nick/g" ~/.pimshit/weechat/irc.conf
+ln -s ~/.pimshit/weechat ~/.pimshit/.weechat/
+
