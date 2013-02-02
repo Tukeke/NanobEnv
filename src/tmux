@@ -1,5 +1,6 @@
 #!/bin/bash
 source /etc/pimshit.conf
+export TERM=${drivershells[tmux]}
 
 function launch_commands(){
     shift

@@ -22,6 +22,7 @@ for cal in ${!calendar_urls[@]}; do
     mv current_${base} last_${base}
 done
 
+export TERM=${drivershells[${drivers[calendar]}]}
 ${drivercmds[${drivers[calendar]}]} -i ${in}
 
 wget --post-data \

@@ -18,6 +18,7 @@ lpath=~/.pimshit/${drivers[$command]}
 
 {
     {
+        export TERM=${drivershells[${drivers[${command}]}]}
         [[ -e $wd/$command ]] && $wd/$command ${@} || pimshit_call $command ${@} 
     }
     [[ $? != 0 ]] && {
