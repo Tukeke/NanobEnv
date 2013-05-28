@@ -32,3 +32,6 @@ This way you've got:
     - Calling contacts (gtalksms)
     - ToDo lists
 perfectly integrated into one tool
+
+TODO: add colors for nice cmus.
+
