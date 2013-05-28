@@ -10,15 +10,19 @@ function launch_commands(){
 }
 
 function get_first(){
-    echo $1; 
+    echo $1;
     return 0;
 }
-start_="$(get_first ${!drivers[@]})";
 
+[[ $1 ]] && {
+    drivers_=($(eval echo \${drivers_$1[@]}))
+} || {
+    drivers_=(${!drivers[@]})
+}
+
+start_="$(get_first ${drivers_[@]})";
 {
     sleep 2
-    launch_commands "${!drivers[@]}"
+    launch_commands "${drivers_[@]}"
 } &
 tmux new -n "${start_^}" "pimshit ${start_}"
-
-
