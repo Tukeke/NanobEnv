@@ -1,4 +1,5 @@
 #!/bin/bash
-source /etc/pimshit.conf
+source /etc/pimshit.conf 2>/dev/null
+source ~/.pimshit/etc/pimshit.conf 2>/dev/null
 export TERM=${drivershells[${drivers[contacts]}]}
 ${drivercmds[${drivers[contacts]}]}"$(${wd}/sync_contacts ${drivers[contacts]})" ${@}

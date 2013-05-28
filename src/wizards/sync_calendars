@@ -1,5 +1,7 @@
 #!/bin/bash
-source /etc/pimshit.conf
+source /etc/pimshit.conf 2>/dev/null
+source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+
 mkdir -p ~/.pimshit/sync_calendar/ &>/dev/null
 read -p "Enter calendar urls (space separated) here: " calendar_urls
 echo $calendar_urls >> ~/.pimshit/sync_calendar/${drivers[calendar]}.conf

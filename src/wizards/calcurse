@@ -1,5 +1,6 @@
 #!/bin/bash
-source /etc/pimshit.conf
+source /etc/pimshit.conf 2>/dev/null
+source ~/.pimshit/etc/pimshit.conf 2>/dev/null
 $wd/wizards/sync_calendars
 mkdir -p ~/.pimshit/calcurse
 cp -r $wd/config/calcurse/* ~/.pimshit/calcurse/
