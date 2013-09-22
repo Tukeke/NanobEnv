@@ -1,0 +1,34 @@
+#!/bin/bash
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
+
+command=$1; shift;
+
+[[ ! $command ]] && {
+    echo "Welcome to nanobenv. Possible commands are: "
+    read -p "$(echo -e "${!drivers[@]}\n> ")" command
+}
+
+lpath=~/.nanobenv/${drivers[$command]}
+[[ ! -e $lpath ]] && {
+    mkdir -p $lpath
+    [[ -e $wd/wizards/${drivers[$command]} ]] && {
+        read -p "This is the first time you execute this command, press enter to enter setup"
+        $wd/wizards/${drivers[$command]}
+    }
+}
+
+{
+    {
+        [[ ${drivers[${command}]} ]] && {
+            export TERM=${drivershells[${drivers[${command}]}]}
+        } || {
+            export TERM=$default_terminal
+        }
+        [[ -e $wd/$command ]] && $wd/$command ${@} || nanobenv_call $command \
+        ${command_categories[$command]} ${@}
+    }
+    [[ $? != 0 ]] && {
+        echo "Could not execute program. Check ~/.nanobenv/$command.log for more details"
+    }
+} 2>~/.nanobenv/$command.log
