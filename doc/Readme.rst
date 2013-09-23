@@ -23,6 +23,10 @@ Deps
 NanobEnv requires a few applications to run correctly, have a look at
 nanovenv.conf to see the required "drivers".
 
+NanovEnv requires (sort of) prettier terminal
+(http://github.com/XayOn/prettierTerminal) and cursedXDG
+(http://github.com/XayOn/cursedXDG).
+
 Components
 ============
 
