@@ -1,16 +1,36 @@
-PIMShit
-=======
+NanobEnv
+=========
+Nanobes might probably be the smallest living organism on earth.
+NanobEnv is a completly-text-based environment, with all the things you probably
+need to make a full computing user experience. Thus making nanobenv the smallest
+environment.
 
-Your console personal information manager
+Installing
+===========
 
-Pimshit aims to group all your best and favourite console tools into a simple tool.
+NanobEnv can be installed without root privileges (and this is the default).
+Just
 
-This is achieved by
-    - Making console PIM-related aplications work togheter nicely
-    - Making a big wrapper directory, where all files should be stored (easy to backup!)
-    - Making it work on the cloud (with google tools right now)
+::
 
-Pimshit provides
+make install
+
+And start it with nanobEnv tmux
+
+Deps
++++++
+
+NanobEnv requires a few applications to run correctly, have a look at
+nanovenv.conf to see the required "drivers".
+
+Components
+============
+
+Personal information manager
++++++++++++++++++++++++++++++++
+
+The PIM part of NanobEnv has:
+
     - Google Calendar integration
     - Google Contacts integration
     - Gmail integration
@@ -21,17 +41,12 @@ Pimshit provides
       - (planned): See your contacts information from google contacts
     - (planned): ToDo list sync with google calendar
 
-This way you've got:
-    - Calendar
-      - With reminders
-    - Contacts
-      - Integrated with bitlbee IM
-    - Mail
-      - With a nice sidebar and labels
-    - Social Networks (bitlbee provides)
-    - Calling contacts (gtalksms)
-    - ToDo lists
-perfectly integrated into one tool
+Common
+++++++++
 
-TODO: add colors for nice cmus.
+The common component contains:
+    - Torrent
+    - File browser
+    - Music player
 
+TODO: add the news reader
