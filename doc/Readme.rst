@@ -5,6 +5,9 @@ NanobEnv is a completly-text-based environment, with all the things you probably
 need to make a full computing user experience. Thus making nanobenv the smallest
 environment.
 
+.. image:: https://raw.github.com/XayOn/NanobEnv/master/nanobenv.png
+
+
 Installing
 ===========
 
