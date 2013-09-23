@@ -1,12 +1,12 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 export TERM=${drivershells[tmux]}
 
 function launch_commands(){
     shift
     for driver in ${@}; do
-        tmux neww -n "${driver^}" "pimshit ${driver}"
+        tmux neww -n "${driver^}" "nanobenv ${driver}"
     done
 }
 
@@ -26,4 +26,4 @@ start_="$(get_first ${drivers_[@]})";
     sleep 2
     launch_commands "${drivers_[@]}"
 } &
-tmux new -n "${start_^}" "pimshit ${start_}"
+tmux new -n "${start_^}" "nanobenv ${start_}"

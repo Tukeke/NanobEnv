@@ -1,6 +1,6 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
     # Interactive mode
@@ -8,9 +8,9 @@ source ~/.pimshit/etc/pimshit.conf 2>/dev/null
     read -p "Enter username: " username
     read -s -p "Enter password: " password
 } || {
-    mkdir -p ~/.pimshit/goobook
+    mkdir -p ~/.nanobenv/goobook
 }
-cp -r $wd/config/goobook/* ~/.pimshit/goobook/
+cp -r $wd/config/goobook/* ~/.nanobenv/goobook/
 
-sed -i "s/REPLACEUSER/$username/g" ~/.pimshit/goobook/goobookrc
-sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/goobook/goobookrc
+sed -i "s/REPLACEUSER/$username/g" ~/.nanobenv/goobook/goobookrc
+sed -i "s/REPLACEPASS/$password/g" ~/.nanobenv/goobook/goobookrc

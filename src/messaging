@@ -1,8 +1,8 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
 [[ ${drivers[messaging]} == "weechat" ]] && {
-    export HOME=~/.pimshit/
+    export HOME=~/.nanobenv/
 }
-pimshit_call messaging
+nanobenv_call messaging

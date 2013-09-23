@@ -1,24 +1,24 @@
-source ~/.pimshit/Mail/mutt_aliases   # Source them
+source ~/.nanobenv/Mail/mutt_aliases   # Source them
 
 #======================================================#
 # Colours
-source ~/.pimshit/mutt/muttrc_colors# In their own file 
+source ~/.nanobenv/mutt/muttrc_colors# In their own file 
 
 #======================================================#
 # Sidebar 
-source ~/.pimshit/mutt/muttrc_sidebar 
+source ~/.nanobenv/mutt/muttrc_sidebar 
 
 #=====================================================#
 # Abook integration
-source ~/.pimshit/mutt/muttrc_abook
+source ~/.nanobenv/mutt/muttrc_abook
 
 # =================================================== #
 # Pgp integration 
-source ~/.pimshit/mutt/muttrc_pgp
+source ~/.nanobenv/mutt/muttrc_pgp
 
 #======================================================#
 # Odds and ends
-source ~/.pimshit/mutt/muttrc_style 
+source ~/.nanobenv/mutt/muttrc_style 
 
 set realname = "REPLACEREALNAME"
 set from = "REPLACEFROM"

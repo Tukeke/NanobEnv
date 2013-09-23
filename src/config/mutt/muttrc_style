@@ -1,7 +1,7 @@
 #macro index,pager I '<shell-escape> fetchmail -v --mda "procmail -f %F" <enter>'
 set use_from = yes
 set envelope_from ="yes"
-set alias_file = ~/.pimshit/mutt/mutt_aliases # In their own file 
+set alias_file = ~/.nanobenv/mutt/mutt_aliases # In their own file 
 set sort_browser=alpha    # Sort mailboxes by alpha(bet)
 set sort_alias=alias                 # Sort alphabetically
 

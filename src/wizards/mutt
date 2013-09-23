@@ -1,20 +1,20 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
 [[ "${BASH_SOURCE[0]}" == "${0}" ]] && {
     # Interactive mode
     echo "This setup will configure your GMail user and password"
-    read -p "If you want to use a different provider, edit ~/.pimshit/mutt/muttrc later"
+    read -p "If you want to use a different provider, edit ~/.nanobenv/mutt/muttrc later"
     read -p "Enter username: " username
     read -s -p "Enter password: " password
     echo
     read -p "Enter your real name: " realname
 } || {
-    mkdir ~/.pimshit/mutt/
+    mkdir ~/.nanobenv/mutt/
 }
 
-cp -r $wd/config/mutt/* ~/.pimshit/mutt/
+cp -r $wd/config/mutt/* ~/.nanobenv/mutt/
 
 [[ $username == *@* ]] && {
     from=$username;
@@ -22,9 +22,9 @@ cp -r $wd/config/mutt/* ~/.pimshit/mutt/
     from="${username}@gmail.com"
 }
 
-sed -i "s/REPLACEUSER/$username/g" ~/.pimshit/mutt/muttrc
-sed -i "s/REPLACEPASS/$password/g" ~/.pimshit/mutt/muttrc
-sed -i "s/REPLACEREALNAME/$realname/g" ~/.pimshit/mutt/muttrc
-sed -i "s/REPLACEFROM/$from/g" ~/.pimshit/mutt/muttrc
+sed -i "s/REPLACEUSER/$username/g" ~/.nanobenv/mutt/muttrc
+sed -i "s/REPLACEPASS/$password/g" ~/.nanobenv/mutt/muttrc
+sed -i "s/REPLACEREALNAME/$realname/g" ~/.nanobenv/mutt/muttrc
+sed -i "s/REPLACEFROM/$from/g" ~/.nanobenv/mutt/muttrc
 
 source $wd/wizards/goobook

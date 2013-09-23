@@ -1,7 +1,7 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 $wd/wizards/sync_calendars
-mkdir -p ~/.pimshit/calcurse
-cp -r $wd/config/calcurse/* ~/.pimshit/calcurse/
+mkdir -p ~/.nanobenv/calcurse
+cp -r $wd/config/calcurse/* ~/.nanobenv/calcurse/
 

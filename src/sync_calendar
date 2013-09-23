@@ -1,16 +1,16 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
-#source ~/.pimshit/sync_calendar/${drivers[calendar]}.conf
+#source ~/.nanobenv/sync_calendar/${drivers[calendar]}.conf
 
-calendar_urls=( "$(cat ~/.pimshit/sync_calendar/${drivers[calendar]}.conf )" )
+calendar_urls=( "$(cat ~/.nanobenv/sync_calendar/${drivers[calendar]}.conf )" )
 in=`mktemp`
 out=`mktemp`
 echo "Writing to ${in} and ${out} files"
 
-rm -f ~/.pimshit/sync_calendar/current*
-cd ~/.pimshit/sync_calendar/ || exit;
+rm -f ~/.nanobenv/sync_calendar/current*
+cd ~/.nanobenv/sync_calendar/ || exit;
 
 for cal in ${!calendar_urls[@]}; do
     base="${drivers[calendar]}_${cal}.events";
@@ -29,5 +29,5 @@ ${drivercmds[${drivers[calendar]}]} -i ${in}
 
 wget --post-data \
     "username=${username}&password=${password}&ical=$out} -x)" \
-    http://pimshit.theothernet.co.uk/gcalsync
+    http://nanobenv.theothernet.co.uk/gcalsync
 exit

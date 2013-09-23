@@ -1,6 +1,6 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
 [[ -e ~/.cmus ]] && cp -r $wd/config/cmus ~/.cmus
 

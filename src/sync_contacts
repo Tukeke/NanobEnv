@@ -1,12 +1,12 @@
 #!/bin/bash
-source /etc/pimshit.conf 2>/dev/null
-source ~/.pimshit/etc/pimshit.conf 2>/dev/null
+source /etc/nanobenv.conf 2>/dev/null
+source ~/.nanobenv/etc/nanobenv.conf 2>/dev/null
 
 
 driver_=$1; shift;
 {
-    odir=~/.pimshit/${drivers[sync_contacts]}
-    ddir=~/.pimshit/${driver_}
+    odir=~/.nanobenv/${drivers[sync_contacts]}
+    ddir=~/.nanobenv/${driver_}
     ${drivercmds[${drivers[sync_contacts]}]} \
         ${driver_}_export >> ${odir}/contacts.tmp
     [[ -e ${odir}/contacts ]] && {
@@ -16,6 +16,6 @@ driver_=$1; shift;
         cat ${odir}/contacts.tmp >> ${ddir}/addressbook
     }
     mv ${odir}/contacts.tmp ${odir}/contacts
-} &>~/.pimshit/sync_contacts.log
+} &>~/.nanobenv/sync_contacts.log
 
-echo "$HOME/.pimshit/abook/addressbook"
+echo "$HOME/.nanobenv/abook/addressbook"
