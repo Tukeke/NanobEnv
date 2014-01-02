@@ -12,14 +12,24 @@ environment for a linux desktop.
 Installing
 ===========
 
-NanobEnv can be installed without root privileges (and this is the default).
-Just
+NanobEnv can be installed without root privileges
+Just do
+
+::
+
+make config
+
+For a system-wide installation
 
 ::
 
 make install
 
-And start it with nanobEnv tmux for the default profile.
+Starting nanobenv
+===================
+
+Choose the profile or app you want to execute, or simple type "nanobenv", it'll ask you wich app you want.
+The applications are named by its behaviour, not their real name, as in "messaging" and "mail" for weechat and tmux
 
 Profiles
 ++++++++++
