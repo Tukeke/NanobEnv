@@ -8,8 +8,7 @@ source /etc/nanobenv.conf
     read -s -p "Enter your bitlbee password (if you dont have one, on nex exec, issue the command /msg &bitlbee register <this_password>)"
 }
 
+mkdir -p ~/.nanobenv/.weechat
 cp -r $wd/config/weechat/* ~/.nanobenv/.weechat
-sed -i "s/REPLACEPASS/$password/g" ~/.nanobenv/weechat/irc.conf
-sed -i "s/REPLACENICKS/$nick/g" ~/.nanobenv/weechat/irc.conf
-ln -s ~/.nanobenv/weechat ~/.nanobenv/.weechat/
-
+sed -i "s/REPLACEPASS/$password/g" ~/.nanobenv/.weechat/irc.conf
+sed -i "s/REPLACENICKS/$nick/g" ~/.nanobenv/.weechat/irc.conf
